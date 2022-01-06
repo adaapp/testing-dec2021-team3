@@ -1,3 +1,18 @@
+<div align="center">
+
+![Component 13(3)](https://user-images.githubusercontent.com/54673205/148420510-0fd3cdb6-042f-4aa6-9518-140793801cdd.png)
+
+[![Issues][issues-badge]][issues-url]
+[![Contributors][contributors-badge]][contributors-url]
+[![Forks][forks-badge]][forks-url]
+[![Stargazers][stars-badge]][stars-url]
+[![MIT License][license-badge]][license-url]
+
+![piano page with shapes(1)](https://user-images.githubusercontent.com/54673205/148419331-5d50bebe-0ae8-400f-afea-b15c6fc874a7.png)
+  
+</div>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +83,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+[issues-badge]: https://img.shields.io/github/issues/adaapp/testing-dec2021-team3.svg?style=for-the-badge
+[issues-url]: https://github.com/adaapp/testing-dec2021-team3/issues
+[contributors-badge]: https://img.shields.io/github/contributors/adaapp/testing-dec2021-team3.svg?style=for-the-badge
+[contributors-url]: https://github.com/adaapp/testing-dec2021-team3/graphs/contributors
+[forks-badge]: https://img.shields.io/github/forks/adaapp/testing-dec2021-team3.svg?style=for-the-badge
+[forks-url]: https://github.com/adaapp/testing-dec2021-team3/network/members
+[stars-badge]: https://img.shields.io/github/stars/adaapp/testing-dec2021-team3.svg?style=for-the-badge
+[stars-url]: https://github.com/adaapp/testing-dec2021-team3/stargazers
+[license-badge]: https://img.shields.io/github/license/adaapp/testing-dec2021-team3.svg?style=for-the-badge
+[license-url]: https://github.com/adaapp/testing-dec2021-team3/blob/master/LICENSE.txt
