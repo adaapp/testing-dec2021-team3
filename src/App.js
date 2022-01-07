@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect } from 'react';
 import useSound from 'use-sound';
-import keys from "./keys/merged.mp3";
+import keys from "./keys/newmerge.mp3";
 
 const useKeyboardBindings = play => {
   useEffect(() => {
@@ -24,7 +24,7 @@ function App() {
   const map = { sprite: {} };
 
   ordered.forEach((item, index) => {
-    map.sprite[item] = [(index * 7650), 7650];
+    map.sprite[item] = [(index * 7652), 7648];
   });
 
   const [play] = useSound(keys, map);
