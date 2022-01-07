@@ -8,14 +8,21 @@
 [![Stargazers][stars-badge]][stars-url]
 [![MIT License][license-badge]][license-url]
 
-![piano page with shapes(1)](https://user-images.githubusercontent.com/54673205/148419331-5d50bebe-0ae8-400f-afea-b15c6fc874a7.png)
-  
+![look feel](https://user-images.githubusercontent.com/54673205/148524396-0582a4b3-0a7f-4ea2-a9b7-54e24dd68579.png)  
+
 </div>
 
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Why mélodie?
+
+The most popular online DAWs and virtual instruments are plagued with advertisements and a lack of key features required by musicians. Our virtual piano is the start of an idea to revolutionise the creation of music and beautiful melodies, all from your browser. Here are some of the key features we are aiming to bring to the table:
+
+- [x] A tuneful and rich Piano sample
+- [x] Being able to play using your keyboard!
+- [ ] Volume control
+- [ ] Key visualisation
+- [ ] Built-in configurable metronome
 
 ## Available Scripts
 
