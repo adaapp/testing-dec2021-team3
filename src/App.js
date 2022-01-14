@@ -1,13 +1,14 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import useSound from 'use-sound';
-import keys from "./keys/newmerge.mp3";
+import keys from "./keys.mp3";
 
 const useKeyboardBindings = (play, setKey) => {
   useEffect(() => {
     const keyHandler = e => {
        play({ id: e.key });
        setKey(e.key);
+       document.getElementById('key-'+e.key).classList = 'key keyPressed';
     } 
     window.addEventListener('keydown', keyHandler);
 
@@ -39,6 +40,11 @@ function App() {
   const [play] = useSound(keys, map);
   useKeyboardBindings(play, setKey);
 
+  const clickPlay = (key) => {
+    play({ id: key });
+    setKey(key);
+  }
+
   return (
     <div className="App">
       <div id="top">
@@ -53,13 +59,13 @@ function App() {
       <div id="middle">
         {keyboard.map((d, i) => 
             d !== d.toString().toUpperCase() ?
-                <div id={keyboard[i].toString()} className='section'>
-                  <div onMouseDown={() => play({ id: d.toString() })} id={i} className='key'>
+                <div id={'section-'+d.toString()} className='section'>
+                  <div onMouseDown={() => clickPlay(d.toString())} id={'key-'+d.toString()} className='key'>
                         <span className='noselect'>{d}</span>
                   </div>
                   {(() => {
                      if(i + 1 < keyboard.length && keyboard[i + 1] === keyboard[i + 1].toString().toUpperCase()) {
-                        return <div onMouseDown={() => play({ id: keyboard[i+1].toString() })} id={i+1} className='black_key'/>
+                        return <div onMouseDown={() => clickPlay(keyboard[i+1].toString())} id={i+1} className='black_key'/>
                      }
                   })()}
                 </div>
