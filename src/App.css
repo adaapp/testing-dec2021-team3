@@ -55,9 +55,30 @@
   font-weight: 600;
   font-size: 14px;
 
-  height: 200px;
+  height: 240px;
   border-radius: 5px;
-  width: 25px;
+  width: 35px;
+  /* !margin-right: 5px; Should be this instead */
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  filter: drop-shadow(0px 3px 20px rgba(255, 255, 255, 0.459));
+}
+
+
+.keyPressed {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  background: linear-gradient(180deg, #CFCFCF 57.29%, rgba(207, 207, 207, 0) 100%);
+  color: white;
+  transition: all 0.1s ease;
+  height: 240px;
+  border-radius: 5px;
+  width: 35px;
   /* !margin-right: 5px; Should be this instead */
   background-color: #F0F0F0;
   display: flex;
@@ -68,10 +89,10 @@
 }
 
 .black_key {
-  height: 140px;
-  width: 15px;
+  height: 150px;
+  width: 23px;
   margin-bottom: 60px;
-  margin-right: -30px;
+  margin-right: -40px;
   background: #6D7689;
   border-radius: 0px 0px 10px 10px;
   box-shadow: inset 4px 0px 7px rgba(0, 0, 0, 0.25);
@@ -88,6 +109,7 @@
 
 .key span {
   margin-bottom: 10px;
+  font-size: 17px;
 }
 
 #logo { 
@@ -100,6 +122,38 @@
   position: absolute;
     right: -157px;
     top: -130px;
+
+
+    animation: rotation 50s infinite linear;
+    
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+    transform-origin: 50% 70%;
+  }
+}
+
+@keyframes polyRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 #tricircle {
@@ -107,6 +161,8 @@
     position: absolute;
     right: -152px;
     bottom: -184px;
+
+    animation: rotateCircle 50s infinite linear;
 }
 
 #polygon {
@@ -114,6 +170,7 @@
     position: absolute;
     left: -114px;
     bottom: -234px;
+    animation: polyRotate 620s infinite linear;
 }
 
 #bottom {

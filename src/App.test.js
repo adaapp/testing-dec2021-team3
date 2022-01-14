@@ -1,8 +1,18 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+it('should display keyboard keys', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  let linkElement = screen.getByText(/1/i);
+  expect(linkElement).toBeInTheDocument();
+  linkElement = screen.getByText(/h/i);
+  expect(linkElement).toBeInTheDocument();
+  linkElement = screen.getByText(/3/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+it('should display app name', () => {
+  render(<App />);
+  let linkElement = screen.getByText(/mélodie/i);
   expect(linkElement).toBeInTheDocument();
 });
