@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useEffect } from 'react';
 import useSound from 'use-sound';
@@ -21,6 +20,11 @@ function App() {
                    '*', '@', '^', 'n', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 's', 'S', 't', 'T', 'u', 
                    'v', 'V', 'w', 'W', 'x', 'y', 'Y', 'z', 'Z'];
 
+  const keyboard = [1, '!', 2, '@', 3, 4, '$', 5, '%', 6, '^', 7, 8, '*', 9, '(', 0, 'q', 'Q', 'w', 'W', 'e', 
+                   'E', 'r', 't', 'T', 'y', 'Y', 'u', 'i', 'I', 'o', 'O', 'p', 'P', 'a', 's', 'S', 
+                   'd', 'D', 'f', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'l', 'L', 'z', 'Z', 'x', 'c', 
+                   'C', 'v', 'V', 'b', 'B', 'n', 'm'];
+
   const map = { sprite: {} };
 
   ordered.forEach((item, index) => {
@@ -32,22 +36,26 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={play}>Boop!</button>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div id="top">
+        <img id="logo" src="/logo.svg" alt="Logo"/>
+        <img id="triangle" className="effects" src="/triangle.svg" alt="Visual Effect"/>
+      </div>
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* style={{marginLeft: ((i-34)*(30)).toString() + 'px'}} */}
+
+      <div id="middle">
+       {keyboard.map((d,i) => {
+         if(d !== d.toString().toUpperCase()) return <div onMouseDown={() => play({ id: d.toString() })} id='key'><span>{d}</span></div>
+         else return <div onMouseDown={() => play({ id: d.toString() })} style={{marginLeft: ((((i-(18 * 4))*2)*30)).toString() + 'px'}} id='black_key'/>
+       })} 
+      </div>
+
+      <div id="bottom">
+        <img id="note" className="effects" src="/notecircle.svg" alt="Note Circle"/>
+       
+      </div>
+      <img id="tricircle" className="effects" src="/tricircle.svg" alt="Visual Effect"/>
+      <img id="polygon" className="effects" src="/polygon.svg" alt="Visual Effect"/>
     </div>
   );
 }
