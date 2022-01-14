@@ -1,20 +1,25 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useSound from 'use-sound';
 import keys from "./keys/newmerge.mp3";
 
-const useKeyboardBindings = play => {
+const useKeyboardBindings = (play, setKey) => {
   useEffect(() => {
-    const keyHandler = e => play({ id: e.key })
+    const keyHandler = e => {
+       play({ id: e.key });
+       setKey(e.key);
+    } 
     window.addEventListener('keydown', keyHandler);
 
     return () => {
       window.removeEventListener('keydown', keyHandler);
     };
-  }, [play]);
+  }, [play, setKey]);
 };
 
 function App() {
+  let [currentKey, setKey] = useState('🎹');
+
   const ordered = ['$', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 
                    'f', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'l', 'L', 'm', '!', '%', '(', 
                    '*', '@', '^', 'n', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 's', 'S', 't', 'T', 'u', 
@@ -32,30 +37,42 @@ function App() {
   });
 
   const [play] = useSound(keys, map);
-  useKeyboardBindings(play);
+  useKeyboardBindings(play, setKey);
 
   return (
     <div className="App">
       <div id="top">
-        <img id="logo" src="/logo.svg" alt="Logo"/>
-        <img id="triangle" className="effects" src="/triangle.svg" alt="Visual Effect"/>
+        <div id="container">
+          <img id="logo" className="noselect" src="/logo.svg" alt="Logo"/>
+          <span>mélodie</span>
+        </div>
+        
+        <img id="triangle" className="effects noselect" src="/triangle.svg" alt="Visual Effect"/>
       </div>
 
-      {/* style={{marginLeft: ((i-34)*(30)).toString() + 'px'}} */}
-
       <div id="middle">
-       {keyboard.map((d,i) => {
-         if(d !== d.toString().toUpperCase()) return <div onMouseDown={() => play({ id: d.toString() })} id='key'><span>{d}</span></div>
-         else return <div onMouseDown={() => play({ id: d.toString() })} style={{marginLeft: ((((i-(18 * 4))*2)*30)).toString() + 'px'}} id='black_key'/>
-       })} 
+        {keyboard.map((d, i) => 
+            d !== d.toString().toUpperCase() ?
+                <div id={keyboard[i].toString()} className='section'>
+                  <div onMouseDown={() => play({ id: d.toString() })} id={i} className='key'>
+                        <span className='noselect'>{d}</span>
+                  </div>
+                  {(() => {
+                     if(i + 1 < keyboard.length && keyboard[i + 1] === keyboard[i + 1].toString().toUpperCase()) {
+                        return <div onMouseDown={() => play({ id: keyboard[i+1].toString() })} id={i+1} className='black_key'/>
+                     }
+                  })()}
+                </div>
+            : null
+        )};
       </div>
 
       <div id="bottom">
-        <img id="note" className="effects" src="/notecircle.svg" alt="Note Circle"/>
-       
+        <img id="note" className="effects noselect" src="/notecircle.svg" alt="Note Circle"/>
+        <span id="current">{currentKey}</span>
       </div>
-      <img id="tricircle" className="effects" src="/tricircle.svg" alt="Visual Effect"/>
-      <img id="polygon" className="effects" src="/polygon.svg" alt="Visual Effect"/>
+      <img id="tricircle" className="effects noselect" src="/tricircle.svg" alt="Visual Effect"/>
+      <img id="polygon" className="effects noselect" src="/polygon.svg" alt="Visual Effect"/>
     </div>
   );
 }
