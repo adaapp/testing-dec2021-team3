@@ -1,0 +1,44 @@
+#metronome {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#metroIcon {
+  width: 25px;
+}
+
+#bpmInput {
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  background: none;
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  width: fit-content;
+  border: none;
+}
+
+#beats {
+  font-size: 20px;
+  margin-left: 3px;
+  margin-right: 20px;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 31px;
+  height: 31px;
+  left: 298px;
+  top: 247px;
+
+  background: rgba(87, 129, 192, 0.77);
+  box-shadow: 0px 0px 14px #5781c0;
+  border-radius: 5px;
+}

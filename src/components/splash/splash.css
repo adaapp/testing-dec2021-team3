@@ -1,0 +1,47 @@
+#splash {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: rgba(177, 177, 177, 0.34);
+  backdrop-filter: blur(80px);
+  z-index: 2000;
+  color: white;
+  align-items: flex-end;
+  transition: opacity 0.9s;
+}
+
+#splashText {
+  color: #575757;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+}
+
+#splashLogo {
+  width: 400px;
+}
+
+#splashBottom {
+  display: flex;
+  flex: 1;
+  margin: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#logoHolder {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.removed {
+  opacity: 0;
+}

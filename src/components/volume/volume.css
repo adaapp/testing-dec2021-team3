@@ -1,0 +1,51 @@
+#volumeWrap {
+  display: flex;
+  align-items: center;
+}
+
+#volumeIcon {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.slider {
+  z-index: 100;
+  -webkit-appearance: none;
+  width: 150px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+
+  background: #6d7689;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 3px 1px rgba(0, 0, 0, 0.53);
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 25px;
+  height: 25px;
+}
+
+.slider::-moz-range-thumb {
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+}
