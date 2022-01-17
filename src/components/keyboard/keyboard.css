@@ -1,0 +1,110 @@
+#keyboard {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 5px; /* !Should not be this */
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  max-height: 300px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.black_key {
+  height: 150px;
+  width: 23px;
+  margin-bottom: 60px;
+  margin-right: -37px;
+  background: #6d7689;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: inset 4px 0px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #f3f3f3;
+  position: absolute;
+  z-index: 1000;
+}
+
+.black_key span {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.black_key:hover {
+  background: linear-gradient(180deg, #6c7689 21.35%, #313847 75.52%);
+}
+
+.keyPressed {
+  animation-name: keyPress;
+  animation-duration: 0.4s;
+}
+
+.key {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+
+  height: 240px;
+  border-radius: 5px;
+  width: 32px;
+  /* !margin-right: 5px; Should be this instead */
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  filter: drop-shadow(0px 3px 20px rgba(255, 255, 255, 0.459));
+}
+
+/*! Performance issues for linear-gradient on mac */
+.key:hover {
+  background: linear-gradient(
+    180deg,
+    #cfcfcf 57.29%,
+    rgba(207, 207, 207, 0) 100%
+  );
+  color: white;
+}
+
+.key span {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+@keyframes keyPress {
+  0% {
+    background: linear-gradient(
+      180deg,
+      #cfcfcf 57.29%,
+      rgba(207, 207, 207, 0) 100%
+    );
+    color: white;
+  }
+
+  100% {
+    background: linear-gradient(
+      180deg,
+      #f0f0f0 57.29%,
+      rgba(238, 238, 238, 0.972) 100%
+    );
+  }
+}
+
+@keyframes blackPress {
+  0% {
+    background: linear-gradient(180deg, #6c7689 21.35%, #313847 75.52%);
+  }
+
+  100% {
+    background: linear-gradient(
+      180deg,
+      #6d7689 57.29%,
+      rgb(109, 118, 137) 100%
+    );
+  }
+}

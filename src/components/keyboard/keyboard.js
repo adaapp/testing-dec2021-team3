@@ -1,7 +1,7 @@
 import useSound from 'use-sound';
 import { useEffect } from 'react';
-
 import keys from "../../sounds/keys.mp3";
+import './keyboard.css';
 
 const useKeyboardBindings = (play, setKey, splash, keys) => {
     useEffect(() => {
