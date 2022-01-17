@@ -11,6 +11,23 @@
   transition: opacity 0.9s;
 }
 
+#left {
+  font-size: 50px;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+#right {
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+}
+
+#right .material {
+  margin-right: 20px;
+  font-size: 50px;
+}
+
 #splashText {
   color: #575757;
   font-size: 50px;
