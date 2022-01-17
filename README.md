@@ -20,9 +20,19 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 - [x] A tuneful and rich Piano sample
 - [x] Being able to play using your keyboard!
-- [ ] Volume control
-- [ ] Key visualisation
-- [ ] Built-in configurable metronome
+- [x] Volume control
+- [x] Key visualisation
+- [x] Built-in configurable metronome
+
+## Team members
+
+|Name     | Team Role    |
+|---------|--------------|
+|Bruno Silva | Scrum Master |
+|Melissa Lupu | UX |
+|Jaheim Simpson | QA |
+|Elijah Olanipekun | QA |
+|Ethan Flynn | DevOps |
 
 ## Available Scripts
 
