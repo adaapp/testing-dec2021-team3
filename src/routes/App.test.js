@@ -11,7 +11,7 @@ it('should display keyboard keys', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-it('should display app name', () => {
+it('should display the app name', () => {
   render(<App />);
   let linkElement = screen.getByText(/mélodie/i);
   expect(linkElement).toBeInTheDocument();
