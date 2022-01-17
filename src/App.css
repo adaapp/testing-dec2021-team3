@@ -1,5 +1,75 @@
 #root {
   height: 100%;
+  font-family: 'Montserrat';
+}
+
+#logoHolder {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#splashText {
+  color: #575757;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+}
+
+#splashLogo {
+  width: 400px;
+}
+
+#splashBottom {
+  display: flex;
+  flex: 1;
+  margin: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#left {
+  font-size: 50px;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+#right {
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+}
+
+#right .material {
+  margin-right: 20px;
+  font-size: 50px;
+}
+
+#splash {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: rgba(177, 177, 177, 0.34);
+  backdrop-filter: blur(80px);
+  z-index: 2000;
+  color: white;
+  align-items: flex-end;
+  transition: opacity 0.9s;
+}
+
+.removed {
+  opacity: 0;
+}
+
+.none {
+  display: none !important;
 }
 
 .App {
@@ -11,11 +81,23 @@
   position: relative;
 }
 
+#controls {
+  display: flex;
+  flex-direction: row;
+  /* height: fit-content;
+  min-height: 50px; */
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#metronome {
+  color: white;
+}
+
 #container {
   align-items: center;
   display: flex;
-
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -34,11 +116,21 @@
   justify-content: space-between;
 }
 
-#middle {
+#keyboard {
   flex: 1;
   display: flex;
   flex-direction: row;
   gap: 5px; /* !Should not be this */
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  max-height: 300px;
+}
+
+#middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -50,14 +142,13 @@
 }
 
 .key {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
 
   height: 240px;
   border-radius: 5px;
-  width: 35px;
+  width: 32px;
   /* !margin-right: 5px; Should be this instead */
   background-color: #F0F0F0;
   display: flex;
@@ -67,44 +158,72 @@
   filter: drop-shadow(0px 3px 20px rgba(255, 255, 255, 0.459));
 }
 
-
 .keyPressed {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  background: linear-gradient(180deg, #CFCFCF 57.29%, rgba(207, 207, 207, 0) 100%);
+  animation-name: keyPress;
+  animation-duration: 0.4s;
+}
+
+input[type=text] {
+  background: none;
   color: white;
-  transition: all 0.1s ease;
-  height: 240px;
-  border-radius: 5px;
-  width: 35px;
-  /* !margin-right: 5px; Should be this instead */
-  background-color: #F0F0F0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  filter: drop-shadow(0px 3px 20px rgba(255, 255, 255, 0.459));
+  font-family: inherit;
+  font-size: 20px;
+  width: fit-content;
+  border: none;
+}
+
+@keyframes keyPress {
+  0%   {
+    background: linear-gradient(180deg, #CFCFCF 57.29%, rgba(207, 207, 207, 0) 100%);
+    color: white;
+  }
+
+  100% {
+    background: linear-gradient(180deg, #F0F0F0 57.29%, rgba(238, 238, 238, 0.972) 100%);
+    
+  }
+}
+
+@keyframes blackPress {
+  0%   {
+    background: linear-gradient(180deg, #6C7689 21.35%, #313847 75.52%);
+  }
+
+  100% {
+    background: linear-gradient(180deg, #6D7689 57.29%, rgb(109, 118, 137) 100%);
+    
+  }
 }
 
 .black_key {
   height: 150px;
   width: 23px;
   margin-bottom: 60px;
-  margin-right: -40px;
+  margin-right: -37px;
   background: #6D7689;
   border-radius: 0px 0px 10px 10px;
   box-shadow: inset 4px 0px 7px rgba(0, 0, 0, 0.25);
-
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #F3F3F3;
   position: absolute;
   z-index: 1000;
 }
 
+.black_key span {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.black_key:hover {
+  background: linear-gradient(180deg, #6C7689 21.35%, #313847 75.52%);
+}
+
+/*! Performance issues for linear-gradient on mac */
 .key:hover {
   background: linear-gradient(180deg, #CFCFCF 57.29%, rgba(207, 207, 207, 0) 100%);
   color: white;
-  transition: all 0.1s ease;
 }
 
 .key span {
@@ -120,12 +239,10 @@
 
 #triangle {
   position: absolute;
-    right: -157px;
-    top: -130px;
+  right: -157px;
+  top: -130px;
 
-
-    animation: rotation 50s infinite linear;
-    
+  animation: rotation 50s infinite linear;
 }
 
 @keyframes rotateCircle {
@@ -143,7 +260,7 @@
   }
   to {
     transform: rotate(359deg);
-    transform-origin: 50% 70%;
+    transform-origin: 50% 29%;
   }
 }
 
@@ -176,13 +293,17 @@
 #bottom {
   min-height: 340px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
 }
 
+#bpmInput {
+  margin-left: 20px;
+}
+
 #note {
-  align-self: center;
+  align-self: flex-start;
   width: 300px;
   
 }
@@ -191,10 +312,18 @@
   width: 400px;
 }
 
+#noteWrap {
+  margin-top: 55px;
+  position: relative;
+}
+
 #current {
-  font-size: 50px;
+   font-size: 50px;
     position: absolute;
-    margin-left: 42px;
+    margin-left: 19px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #e6e6e6;
     text-shadow: 0px 0px 10px #ffffff;
 }
@@ -211,4 +340,83 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+}
+
+#metronome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#metroIcon {
+  width: 25px;
+}
+
+#beats {
+  font-size: 20px;
+  margin-left: 3px;
+  margin-right: 20px;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 31px;
+  height: 31px;
+  left: 298px;
+  top: 247px;
+
+  background: rgba(87, 129, 192, 0.77);
+  box-shadow: 0px 0px 14px #5781C0;
+  border-radius: 5px;
+}
+
+#volumeIcon {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+#volumeWrap {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  z-index: 100;
+  -webkit-appearance: none;
+  width: 150px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+  background: #6D7689;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 3px 1px rgba(0, 0, 0, 0.53);
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
 }
