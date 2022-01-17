@@ -10,16 +10,23 @@ const useKeyboardBindings = (play, setKey, splash, keys) => {
           if(document.activeElement.id !== 'bpmInput' && keys.includes(e.key)) {
             play({ id: e.key });
             setKey(e.key);
+
+            let element;
+
+            document.getElementById('key-' + e.key) ?
+                element = [document.getElementById('key-' + e.key), 0]
+                : element = [document.getElementById('black-' + e.key), 1];
     
-            const element = document.getElementById('key-' + e.key);
-    
-            if(element.classList.contains('keyPressed')) {
-                element.style.animation = 'none';
+            if(element[0].classList.contains('keyPressed') 
+                || element[0].classList.contains('blackPressed')) {
+
+                element[0].style.animation = 'none';
                 setTimeout(function(){ 
-                    element.style.animation = '';
+                    element[0].style.animation = '';
                 }, 1); 
             } else {
-              element.classList.add('keyPressed');
+                element[1] ? element[0].classList.add('blackPressed')
+                : element[0].classList.add('keyPressed');
             }
           }
         }
@@ -68,7 +75,7 @@ function Keyboard(props) {
                 </div>
                 {(() => {
                   if (i + 1 < keyboard.length && keyboard[i + 1] === keyboard[i + 1].toString().toUpperCase()) {
-                    return <div onMouseDown={() => clickPlay(keyboard[i + 1].toString())} id={i + 1} className='black_key'>
+                    return <div onMouseDown={() => clickPlay(keyboard[i + 1].toString())} id={'black-' + keyboard[i+1].toString()} className='black_key'>
                       <span className='noselect'>{keyboard[i + 1]}</span>
                     </div>
                   }
