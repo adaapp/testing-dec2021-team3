@@ -39,6 +39,11 @@
   background: linear-gradient(180deg, #6c7689 21.35%, #313847 75.52%);
 }
 
+.blackPressed {
+  animation-name: blackPress;
+  animation-duration: 0.4s;
+}
+
 .keyPressed {
   animation-name: keyPress;
   animation-duration: 0.4s;
@@ -104,7 +109,7 @@
     background: linear-gradient(
       180deg,
       #6d7689 57.29%,
-      rgb(109, 118, 137) 100%
+      #313847 100%
     );
   }
 }
