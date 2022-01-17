@@ -12,8 +12,6 @@
 
 </div>
 
-
-
 # Why mélodie?
 
 The most popular online DAWs and virtual instruments are plagued with advertisements and a lack of key features required by musicians. Our virtual piano is the start of an idea to revolutionise the creation of music and beautiful melodies, all from your browser. Here are some of the key features we are aiming to bring to the table:
@@ -26,13 +24,8 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ## :trophy: Team members
 
-|Name     | Team Role    |
-|---------|--------------|
-|Bruno Silva | Scrum Master |
-|Melissa Lupu | UX |
-|Jaheim Simpson | QA |
-|Elijah Olanipekun | QA |
-|Ethan Flynn | DevOps |
+![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
+
 
 ## :heavy_exclamation_mark: Prerequisites
 
