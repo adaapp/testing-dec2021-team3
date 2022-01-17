@@ -33,11 +33,11 @@ function App() {
 
       <div id='top'>
         <div id='container'>
-          <img id='logo' className='noselect' src='/svg/logo.svg' alt='Logo' />
-          <span>mélodie</span>
+          <img id='logo' className='noselect' src='/svg/logo.svg' alt='Header Logo' />
+          <span data-testid="app-text">mélodie</span>
         </div>
 
-        <img id='triangle' className='effects noselect' src='/svg/triangle.svg' alt='Visual Effect' />
+        <img id='triangle' className='effects noselect' src='/svg/triangle.svg' alt='Visual Effect 1' />
       </div>
 
       <div id='middle'>
@@ -57,8 +57,8 @@ function App() {
           <span id='current'>{currentKey}</span>
         </div>
       </div>
-      <img id='tricircle' className='effects noselect' src='/svg/tricircle.svg' alt='Visual Effect' />
-      <img id='polygon' className='effects noselect' src='/svg/polygon.svg' alt='Visual Effect' />
+      <img id='tricircle' className='effects noselect' src='/svg/tricircle.svg' alt='Visual Effect 2' />
+      <img id='polygon' className='effects noselect' src='/svg/polygon.svg' alt='Visual Effect 3' />
     </div>
   );
 }
