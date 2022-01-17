@@ -28,7 +28,9 @@ function App() {
     <div className='App'>
 
       {splash ?
-        <Splash setSplash={setSplash}/>
+        <div data-testid="splashWrap"> 
+          <Splash setSplash={setSplash}/>
+        </div>
       : null}
 
       <div id='top'>

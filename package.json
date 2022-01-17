@@ -12,6 +12,12 @@
     "use-sound": "^4.0.1",
     "web-vitals": "^2.1.2"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/index.js",
+      "!src/reportWebVitals.js"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

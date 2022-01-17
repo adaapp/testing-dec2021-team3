@@ -1,5 +1,21 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
+
+it('should display the flash screen when rendered', async () => {
+  render(<App />);
+
+  expect(screen.getByTestId('splashWrap')).toBeInTheDocument();
+  expect(screen.getByTestId('screen')).toBeInTheDocument();
+
+  expect(screen.getByTestId('screen').className).toBe('');
+  fireEvent.click(screen.getByTestId('screen'));
+  expect(screen.getByTestId('screen').className).toBe('removed');
+  
+  // await new Promise((r) => setTimeout(r, 1000));
+
+  // expect(screen.getByText('click to continue...')).toBeNull;
+  // expect(screen.getByTestId('screen')).toBeNull;
+});
 
 it('should display the name of the app ', () => {
   render(<App />);
