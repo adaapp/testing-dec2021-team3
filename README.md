@@ -24,7 +24,7 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 - [x] Key visualisation
 - [x] Built-in configurable metronome
 
-## Team members
+## :trophy: Team members
 
 |Name     | Team Role    |
 |---------|--------------|
@@ -34,26 +34,53 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 |Elijah Olanipekun | QA |
 |Ethan Flynn | DevOps |
 
-## Available Scripts
+## :heavy_exclamation_mark: Prerequisites
+
+This project requires npm to execute the files, so ensure that it is installed.
+
+<details><summary><b>Stuck? Press here to view instructions :arrow_heading_down:</b></summary>
+
+1. Ensure node and npm are installed by running the following commands in your terminal:
+
+    ```sh
+    $ node -v
+    $ npm -v
+    ```
+    If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+2. Afterwards, clone this repo:
+
+    ```sh
+    $ git clone https://github.com/adaapp/testing-dec2021-team3.git
+    ```
+  
+</details>
+
+## :book: Getting Started
 
 In the project directory, you can run:
 
-### `npm start`
+  ```sh
+  $ npm start
+  ```
 
-Runs the app in the development mode.\
+Runs the app in the development mode. :point_up_2: \
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
+  ```sh
+  $ npm test
+  ```
+  
+Launches the test runner in the interactive watch mode. :point_up_2: \
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+  ```sh
+  $ npm run build
+  ```
+Builds the app for production to the `build` folder. :point_up_2: \
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
@@ -61,9 +88,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ```sh
+  $ npm run eject
+  ```
+**Note: this :point_up_2: is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
