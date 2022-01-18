@@ -78,6 +78,7 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 ### GitHub Actions 
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
+### For additional examples click [here](https://docs.github.com/en/actions)
 
 
 
