@@ -2,61 +2,83 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  display: flex;
   background: rgba(177, 177, 177, 0.34);
+  -webkit-backdrop-filter: blur(80px);
   backdrop-filter: blur(80px);
+  display: flex;
+  flex-direction: column;
   z-index: 2000;
   color: white;
-  align-items: flex-end;
   transition: opacity 0.9s;
 }
 
-#left {
-  font-size: 50px;
-  font-weight: bold;
+#piano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1600px) {
+    #keyHeader{
+      width: 100%;
+    }
+
+    #pianoHolder {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+#playHelp {
+  font-size: 25px;
+  font-weight: normal;
+  margin-left: 50px;
   max-width: 500px;
 }
 
-#right {
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
+#pianoImage {
+  max-width: 1800px;
 }
 
-#right .material {
+#splashBottom {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 55px;
+
+  display: flex;
+  align-items: center;
+}
+
+#splashBottom .material {
   margin-right: 20px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #splashText {
-  color: #575757;
+  color: white;
   font-size: 50px;
   font-weight: bold;
   position: absolute;
-  bottom: 5px;
+  margin-top: 390px;
 }
 
 #splashLogo {
   width: 400px;
 }
 
-#splashBottom {
+#keyHeader {
   display: flex;
-  flex: 1;
-  margin: 50px;
   justify-content: space-between;
-  align-items: flex-end;
 }
 
 #logoHolder {
-  position: absolute;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-direction: column;
 }
 
 .removed {

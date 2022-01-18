@@ -11,10 +11,10 @@ describe('Testing the clearSplash() function', () => {
     });
 });
 
-it('should display welcome text ', () => {
+it('should display help instructions ', () => {
   render(<Splash />);
   
-  expect(screen.getByTestId('welcome')).toHaveTextContent('Welcome to the next generation of music creation');
+  expect(screen.getByTestId('helper')).toHaveTextContent('Play the virtual keys using your keyboard, or by clicking on them!');
   expect(screen.getByText(/mélodie/i)).toBeInTheDocument();
 });
 
