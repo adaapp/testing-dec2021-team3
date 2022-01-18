@@ -27,6 +27,23 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 ![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
 
 
+## :heavy_exclamation_mark: UI Designs and UX Testing
+
+In order to begin our project, we began conceptualising the design of our virtual keyboard in Figma. This resulted in 2 initial designs.
+
+Design 1                   |  Design 2
+:-------------------------:|:-------------------------:
+![design 1](https://user-images.githubusercontent.com/54673305/149911704-59a77e06-e0d5-4a91-944e-ee0a2559b3c6.png) |  ![design 2](https://user-images.githubusercontent.com/54673305/149911790-efbf0554-84c9-4c1d-872a-b5fe4b1a7f80.png)
+
+### UI Testing of Designs 
+
+As we have created 2 slightly similar designs, we decided to generate a [form](https://forms.gle/oGP2Z5ya8JYSQ3oj8) and test the designs with real users from our cohort as well as work colleagues. The [results](https://docs.google.com/spreadsheets/d/10MxjZOEHTrxK1OWae4IZZT18MHrDF0U7FuKx6qBaNYE/edit?resourcekey#gid=733658812) of the form demonstrate the success that Design 2 has had and means that as a team, we will work towards achieving this design in the final product.
+
+### Usability Testing of Designs 
+
+Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to generate a [form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or website. By testing our webpage on real users, we were able to identify issues that automated tools may not find. Those issues can then be translated into Github issues which as a team, we can resolve
+
+
 ## :heavy_exclamation_mark: Prerequisites
 
 This project requires npm to execute the files, so ensure that it is installed.
