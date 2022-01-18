@@ -29,20 +29,23 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ## :heavy_exclamation_mark: UI Designs and UX Testing
 
-In order to begin our project, we began conceptualising the design of our virtual keyboard in Figma. Figma is a cloud-based design tool that provides real-time and simultaneous collaboration which is essential for our team of 5. This meant that during our initial designs where we all created a design, we were all able to transparently see and adjust each other's interpretation of a virtual keyboard and mélodie's theme. We then collaborated on a Google meeting the best features, colours, layouts and structured of each team members design and in the end, we formalised our preferances into 2 designs.
+In order to begin our project, we began conceptualising the design of our virtual keyboard in Figma. Figma is a cloud-based design tool that provides real-time and simultaneous collaboration which is essential for our team of 5. This meant that during our initial designs where we all created a design, we were all able to transparently see and adjust each other's interpretation of a virtual keyboard and mélodie's theme. We then collaborated on a Google meeting on the best features, colours, layouts and structured of each team members design and in the end, we formalised our preferances into 2 designs.
 
 Design 1                   |  Design 2
 :-------------------------:|:-------------------------:
 ![design 1](https://user-images.githubusercontent.com/54673305/149911704-59a77e06-e0d5-4a91-944e-ee0a2559b3c6.png) |  ![design 2](https://user-images.githubusercontent.com/54673305/149911790-efbf0554-84c9-4c1d-872a-b5fe4b1a7f80.png)
 
-### A|B Testing of Initial Designs 
+### A/B Testing of Initial Designs 
 
-As we have created 2 slightly similar designs, we decided to construct a [Google Form](https://forms.gle/oGP2Z5ya8JYSQ3oj8) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) and test the designs with real users from our cohort as well as work colleagues. The [results](https://docs.google.com/spreadsheets/d/10MxjZOEHTrxK1OWae4IZZT18MHrDF0U7FuKx6qBaNYE/edit?resourcekey#gid=733658812) of the form demonstrate the success that Design 2 has had and means that as a team, we will work towards achieving this design in the final product.
+In order to decide out of the 2 designs which is the most suitable, we agreed to implement A/B testing. This is a method of comparing an original and alternative version of a webpage or webpage element against each other to determine which one performs better and is more aligned with the project objectives or themes. Usually, this is measured through conversion rates, however, we decided to ask users from our cohort as well as work colleagues which design they liked the most and to provide any additional feedback. The additional feedback is crucial to ensure that the design and functionality are well-suited and comfortable for the end-users. We did this through a [Google Form](https://forms.gle/oGP2Z5ya8JYSQ3oj8) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) and the [results](https://docs.google.com/spreadsheets/d/10MxjZOEHTrxK1OWae4IZZT18MHrDF0U7FuKx6qBaNYE/edit?resourcekey#gid=733658812) of the form demonstrate that Design 2 has had more success which means that as a team, we will work towards achieving this design in the final product.
+
+|                          |                          |
+:-------------------------:|:-------------------------:
+<img width="710" alt="Screenshot 2022-01-18 at 12 53 36" src="https://user-images.githubusercontent.com/54673305/149941036-a5cc3dff-bab8-470e-933e-b53221d6e121.png"> | <img width="714" alt="Screenshot 2022-01-18 at 12 53 16" src="https://user-images.githubusercontent.com/54673305/149941104-537de179-eea0-4f5f-b206-88d10946172e.png">
 
 ### Usability Testing of Final Product
 
-Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or website. By testing our webpage on real users, we were able to identify issues that automated tools may not find. Those issues can then be translated into Github issues which as a team, we can resolve
-
+Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or website. By testing our webpage on real users, we were able to identify issues that automated tools may not find. Those issues can then be translated into Github issues which as a team, we can resolve.
 
 ## :heavy_exclamation_mark: Prerequisites
 
