@@ -42,7 +42,7 @@ Design 1                   |  Design 2
 
 The react testing library is used for testing the UI. Jest (standalone) is utilised to test the logic of the application. Jest is an javascript testing framework designed with simplicity in mind. Jest supports projects coded using Babel, Typescript, **Node**, React, Angular, Vue and more. Making Jest an ideal testing framework for our project. Using Jest, the team worked together to produce testing blocks that lead to 90-100% code coverage.
 
-### Coveralls
+### ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
 ![Coveralls interface](https://user-images.githubusercontent.com/90607602/149975572-80f89898-6a21-4665-81b0-70f5fc127534.png)
 
@@ -73,6 +73,11 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 - SEO which is an aggregation of scores in features such as meta description, presence of titles, legible font sizes.
 
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
+
+## Continuous integration / Continuous Delivery  
+### GitHub Actions 
+
+GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
 
 
 
