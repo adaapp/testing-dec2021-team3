@@ -45,7 +45,13 @@ In order to decide out of the 2 designs which is the most suitable, we agreed to
 
 ### Usability Testing of Final Product
 
-Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or website. By testing our webpage on real users, we were able to identify issues that automated tools may not find. Those issues can then be translated into Github issues which as a team, we can resolve.
+Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or webpage. By testing our product on real users, we were able to identify issues regarding navigation, accessibility as wells as problems that automated tools may not find as well. Those issues can then be translated into Github issues which as a team, we can later resolve. 
+
+screenshot of results... pending... waiting for bruno to commit the new splash screen...
+
+### Accessibility Testing
+
+In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. 
 
 ## :heavy_exclamation_mark: Prerequisites
 
