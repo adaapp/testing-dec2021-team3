@@ -76,7 +76,9 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
 
+### Manual Testing 
 
+Manual testing was completed and documented using google docs. The purpose of Manual Testing in for this is to identifyany bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have code implemented to fix specific bugs which may occur when the user is using our piano. Although Manual Software Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts does not require knowledge of any testing tool.
 
 ## Continuous integration / Continuous Delivery  
 ### GitHub Actions 
