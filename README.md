@@ -7,6 +7,8 @@
 [![Forks][forks-badge]][forks-url]
 [![Stargazers][stars-badge]][stars-url]
 [![MIT License][license-badge]][license-url]
+[![Coverage][coverage-badge]][coverage-url]
+
 
 ![look feel](https://user-images.githubusercontent.com/54673205/148524396-0582a4b3-0a7f-4ea2-a9b7-54e24dd68579.png)  
 
@@ -34,6 +36,11 @@ In order to begin our project, we began conceptualising the design of our virtua
 Design 1                   |  Design 2
 :-------------------------:|:-------------------------:
 ![design 1](https://user-images.githubusercontent.com/54673305/149911704-59a77e06-e0d5-4a91-944e-ee0a2559b3c6.png) |  ![design 2](https://user-images.githubusercontent.com/54673305/149911790-efbf0554-84c9-4c1d-872a-b5fe4b1a7f80.png)
+
+### 📖 React Testing library 
+![image](https://user-images.githubusercontent.com/90607602/149968583-1f49f002-711b-4ca7-9be0-a31edd29d1e8.png)
+
+The react testing library is used for testing the UI. Jest (standalone) is utilised to test the logic of the application. Jest is an javascript testing framework designed with simplicity in mind. Jest supports projects coded using Babel, Typescript, **Node**, React, Angular, Vue and more. Making Jest an ideal testing framework for our project. Using Jest, the team worked together to produce testing blocks that lead to 90-100% code coverage.
 
 ### A/B Testing of Initial Designs 
 
@@ -79,7 +86,8 @@ This project requires npm to execute the files, so ensure that it is installed.
 2. Afterwards, clone this repo:
 
     ```sh
-    $ git clone https://github.com/adaapp/testing-dec2021-team3.git
+    $ git clone https://github.com/adaapp/testi![Uploading unnamed.png…]()
+ng-dec2021-team3.git
     ```
   
 </details>
@@ -167,3 +175,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [stars-url]: https://github.com/adaapp/testing-dec2021-team3/stargazers
 [license-badge]: https://img.shields.io/github/license/adaapp/testing-dec2021-team3.svg?style=for-the-badge
 [license-url]: https://github.com/adaapp/testing-dec2021-team3/blob/master/LICENSE.txt
+[coverage-badge]: https://img.shields.io/coveralls/github/adaapp/testing-dec2021-team3?style=for-the-badge
+[coverage-url]: https://coveralls.io/github/adaapp/testing-dec2021-team3
