@@ -69,14 +69,14 @@ function Keyboard(props) {
         <div id='keyboard'>
           {keyboard.map((d, i) =>
             !isNaN(d) || d !== d.toUpperCase() ?
-              <div id={'section-' + d.toString()} key={'key-' + d.toString()} className='section'>
+              <div id={'section-' + d.toString()} key={'list-' + d.toString()} className='section'>
                 <div onMouseDown={() => clickPlay(d.toString())} id={'key-' + d.toString()} className='key'>
-                  <span className='noselect'>{d}</span>
+                  <span data-testid={'white-' + d} className='noselect'>{d}</span>
                 </div>
                 {(() => {
                   if (i + 1 < keyboard.length && keyboard[i + 1] === keyboard[i + 1].toString().toUpperCase()) {
                     return <div onMouseDown={() => clickPlay(keyboard[i + 1].toString())} id={'black-' + keyboard[i+1].toString()} className='black_key'>
-                      <span className='noselect'>{keyboard[i + 1]}</span>
+                      <span data-testid={'black-' + keyboard[i + 1]} className='noselect'>{keyboard[i + 1]}</span>
                     </div>
                   }
                 })()}
