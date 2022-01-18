@@ -45,8 +45,7 @@ The react testing library is used for testing the UI. Jest (standalone) is utili
 ### ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
 <img src="https://user-images.githubusercontent.com/90607602/149984221-2fc71ed1-f4ce-48b2-8da0-5afe979183c9.png" width="435.875" height="165">
-
-
+This action runs all React Testing Library tests, and pushes code coverage to coveralls.io
 
 Coveralls is a web service that allows us to track the code coverage of our digital piano website over time in order to optimize the effectiveness of our unit tests. Coveralls also assist the team in making sure that all of the code is well tested and it allows the team to check the code coverage over time. Coveralls does this by collecting code coverage data and analyses it for issues that the user normally wouldn't find until there some sort of an error. Coveralls will produce a summary of this data in a simplified interface where you can see the trends and changes for coverage on all of the source files used. Coveralls also gives the user a badge that has been added to the readme to provide up-to-date information about our coverage status from viewable github.
 
@@ -87,10 +86,12 @@ Manual testing was completed on the mélodie website and documented using google
 
 
 ## Continuous integration / Continuous Delivery  
+
 ### GitHub Actions 
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
-![Testing automation](https://user-images.githubusercontent.com/90607602/149986176-a16973ff-5ef5-49a1-a8a7-3053ee745374.png)
+![Testing automation](https://user-images.githubusercontent.com/90607602/149996101-507a8a2e-cfbc-49b9-8d19-bc40a3509987.png)
+
 ### For additional examples click [here](https://docs.github.com/en/actions)
 
 
