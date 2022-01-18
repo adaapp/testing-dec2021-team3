@@ -51,7 +51,16 @@ screenshot of results... pending... waiting for bruno to commit the new splash s
 
 ### Accessibility Testing
 
-In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. 
+In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. There are 4 metrics which we have focussed on which were: 
+
+- Performance which is an aggregation of how the page progressed in aspects such as loading speed, time taken for loading basic frames and displaying meaningful content. 
+- Accessibility which is an aggregation of how accessible the website is through audio captions, button names and 'aria-' attributes.
+- Best Practices which is an aggregation of many practices that have been deemed 'best' such as use of HTTPS and avoiding the use of deprecated code.
+- SEO which is an aggregation of scores in features such as meta description, presence of titles, legible font sizes.
+
+![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
+
+
 
 ## :heavy_exclamation_mark: Prerequisites
 
