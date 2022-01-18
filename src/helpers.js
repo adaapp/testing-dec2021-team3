@@ -41,9 +41,8 @@ const sanitiseBeat = (oldBeat, newBeat) => {
 };
 
 const createSprite = (values, volume) => {
-
     if(Array.isArray(values)) {
-        if(volume >= 0 && volume <= 100) {
+        if(typeof(volume) === 'number' && volume >= 0 && volume <= 100) {
             const map = { sprite: {}, volume: volume / 100 };
 
             values.forEach((item, index) => {
@@ -52,7 +51,7 @@ const createSprite = (values, volume) => {
         
             return map;
         } else {
-            throw new Error('The volume must be between (and including) 0 and 100!');
+            throw new Error('The volume must be an number between 0 and 100!');
         }
     } else {
         throw new Error('You must enter a list as the first argument!');

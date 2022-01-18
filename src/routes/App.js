@@ -26,15 +26,6 @@ function App() {
   const map = createSprite(ordered, 50);
   const [play, data] = useSound(keys, map);
 
-  // const handleInput = (e) => {
-  //   if(e.target.value < 1000) setBpm(e.target.value);
-
-  //   if(isBeating) {
-  //     clearTimeout(timeout);
-  //     setBeat(false)
-  //   }
-  // }
-
   return (
     <div className='App'>
 
