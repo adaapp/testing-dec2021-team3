@@ -156,19 +156,52 @@ describe('Testing the createSprite() function', () => {
 
 });
 
-// '0': [ 7652, 7648 ],
-//           '1': [ 15304, 7648 ],
-//           '2': [ 22956, 7648 ],
-//           '3': [ 30608, 7648 ],
-//           '4': [ 38260, 7648 ],
-//           '5': [ 45912, 7648 ],
-//           '6': [ 53564, 7648 ],
+describe('Testing the isKeyBlack function', () => {
+    it('should return a boolean value', () => {
+        expect(typeof isKeyBlack(['a'], 0)).toBe('boolean');
+        expect(typeof isKeyBlack(['k', 'l'], 0)).not.toBe('number');
+        expect(typeof isKeyBlack(['n', 'm', 'f'], 1)).not.toBe('string');
+        expect(typeof isKeyBlack([9, 1, 4, 2], 3)).not.toBe('undefined');
+    });
 
-// describe('Testing the isKeyBlack function', () => {
-//     it('should return a string', () => {
-//         expect(typeof convertToNote('t')).toBe('string');
-//         expect(typeof convertToNote('u')).not.toBe('number');
-//         expect(typeof convertToNote('y')).not.toBe('boolean');
-//         expect(typeof convertToNote('o')).not.toBe('undefined');
-//     });
-// });
+    it('should return true if the list item selected is in all uppercase letters', () => {
+        expect(isKeyBlack([4, 'W', 'o', 'v'], 1)).toBeTruthy();
+        expect(isKeyBlack(['D', 'Q', 'a', 'S'], 3)).toBeTruthy();
+        expect(isKeyBlack([7, 1, 2, 9, 'D'], 4)).toBeTruthy();
+        expect(isKeyBlack(['**', 'T', '', null], 1)).toBeTruthy();
+        expect(isKeyBlack(['W', false, false, false], 0)).toBeTruthy();
+        expect(isKeyBlack(['SCHOOL', 'ARIANA', 'GITHUB', 'MP', 'OOP'], 4)).toBeTruthy();
+    });
+
+    it('should return false if the list item selected has lowercase letters', () => {
+        expect(isKeyBlack(['b', 'w', 'u'], 2)).toBeFalsy();
+        expect(isKeyBlack([200, 'o', -2, 'T', 'B', 0], 2)).toBeFalsy();
+        expect(isKeyBlack(['w'], 0)).toBeFalsy();
+        expect(isKeyBlack(['pOlice', 'GooD', 'j', '()'], 1)).toBeFalsy();
+        expect(isKeyBlack(['lOOl', 'TRy', false, true], 0)).toBeFalsy();
+    });
+
+    it('should return false if the second argument has a higher value than the length of the first', () => {
+        expect(isKeyBlack(['o'], 2)).toBeFalsy();
+        expect(isKeyBlack([9, '@', 1, 5, 'pv'], 10)).toBeFalsy();
+        expect(isKeyBlack([], 1)).toBeFalsy();
+        expect(isKeyBlack(['o'], -1)).toBeFalsy();
+    });
+
+    it('should throw an error if the first argument is not a list', () => {
+        expect(() => isKeyBlack(null, 1)).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(undefined, 4)).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(false, 0)).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack({}, 3)).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(true, 10)).toThrowError('You must enter a list and a number!');
+    });
+
+    it('should throw an error if the second argument is not an integer', () => {
+        expect(() => isKeyBlack(['a'], null)).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack([0, 10], 's')).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(['b', 'd', 9, 4], undefined)).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(['c', 'k', 'l'], {})).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(['u', 'l'])).toThrowError('You must enter a list and a number!');
+        expect(() => isKeyBlack(['v', 'b', 'i'], false)).toThrowError('You must enter a list and a number!');
+    });
+});

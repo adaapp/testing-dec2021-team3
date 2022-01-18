@@ -25,7 +25,7 @@ const convertToNote = (key) => {
 const sanitiseBeat = (oldBeat, newBeat) => {
 
     if (typeof oldBeat === 'string' && typeof newBeat === 'string') {
-        
+
         let clean = newBeat.replace(/\D/g, '');
         const intValue = parseInt(clean);
 
@@ -41,14 +41,14 @@ const sanitiseBeat = (oldBeat, newBeat) => {
 };
 
 const createSprite = (values, volume) => {
-    if(Array.isArray(values)) {
-        if(typeof(volume) === 'number' && volume >= 0 && volume <= 100) {
+    if (Array.isArray(values)) {
+        if (typeof (volume) === 'number' && volume >= 0 && volume <= 100) {
             const map = { sprite: {}, volume: volume / 100 };
 
             values.forEach((item, index) => {
                 map.sprite[item] = [(index * 7652), 7648];
             });
-        
+
             return map;
         } else {
             throw new Error('The volume must be an number between 0 and 100!');
@@ -59,10 +59,15 @@ const createSprite = (values, volume) => {
 };
 
 const isKeyBlack = (keyboard, current) => {
-    let item = keyboard[current];
+    if (Array.isArray(keyboard)
+        && typeof (current) === 'number'
+        && Number.isInteger(current)) {
 
-    if (Array.isArray(keyboard) && typeof (current) === 'number') {
-        return (current + 1 < keyboard.length
+        if(current < 0) return false;
+
+        let item = keyboard[current];
+
+        return (current + 1 <= keyboard.length
             && isNaN(item) && item === item.toUpperCase());
     } else {
         throw new Error('You must enter a list and a number!');
