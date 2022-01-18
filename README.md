@@ -77,8 +77,9 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
 
 ### Manual Testing 
+For the full document click [here](https://docs.google.com/document/d/1bMMpZrJiJaOZ3YBeL8ojtOPKUnXsnf7fyY5ar0qB9Us/edit?usp=sharing) .
 
-Manual testing was completed and documented using google docs. The purpose of Manual Testing in for this is to identifyany bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have code implemented to fix specific bugs which may occur when the user is using our piano. Although Manual Software Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts does not require knowledge of any testing tool.
+Manual testing was completed on the mélodie website and documented using google docs. The purpose of Manual Testing in for this is to identify any bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have necessary code implemented to fix specific bugs which may occur when the user is using our digital piano. Although Manual website Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts do not require knowledge of any testing tool.
 <img src="https://user-images.githubusercontent.com/90607602/149991308-ea087c2f-51b8-4618-906c-0076a7c41d25.png" width="918" height="438">
 ### Resolution to the issue 
 <img src="https://user-images.githubusercontent.com/90607602/149991328-36c78af7-6b79-40f6-b7e9-269975162f6c.png" width="918" height="438">
