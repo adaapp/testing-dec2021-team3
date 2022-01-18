@@ -76,10 +76,13 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
 
+
+
 ## Continuous integration / Continuous Delivery  
 ### GitHub Actions 
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
+![Testing automation](https://user-images.githubusercontent.com/90607602/149986176-a16973ff-5ef5-49a1-a8a7-3053ee745374.png)
 ### For additional examples click [here](https://docs.github.com/en/actions)
 
 
