@@ -79,21 +79,26 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 For the full document click [here](https://docs.google.com/document/d/1bMMpZrJiJaOZ3YBeL8ojtOPKUnXsnf7fyY5ar0qB9Us/edit?usp=sharing) .
 
 Manual testing was completed on the mélodie website and documented using google docs. The purpose of Manual Testing in for this is to identify any bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have necessary code implemented to fix specific bugs which may occur when the user is using our digital piano. Although Manual website Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts do not require knowledge of any testing tool.
-<img src="https://user-images.githubusercontent.com/90607602/149991308-ea087c2f-51b8-4618-906c-0076a7c41d25.png" width="918" height="438">
+
+<img src="https://user-images.githubusercontent.com/90607602/149998909-e9b14204-e748-4eeb-a7b9-2818eca8ee4e.png" width="500" height="250">
+
 ### Resolution to the issue 
-<img src="https://user-images.githubusercontent.com/90607602/149991328-36c78af7-6b79-40f6-b7e9-269975162f6c.png" width="918" height="438">
+
+<img src="https://user-images.githubusercontent.com/90607602/149999012-7c40624f-1a2b-40b3-a910-2d3c97680e3e.png" width="500" height="250">
 
 
 
 ## Continuous integration / Continuous Delivery  
 
 ### Netflify 
+<img src="https://user-images.githubusercontent.com/90607602/149997385-e8bb60d8-a8f3-4c4b-9d4a-89886c284077.png" width="400" height="250">
+<img src="https://user-images.githubusercontent.com/90607602/149996985-ecabe7b2-da3a-4637-8a06-cc4edc90915e.png" width="500" height="300">
 Netlify is used to continuously deploy our changes, every time we push to the main branch, the website goes live with a new version, when a pull request is made in our workflow, netflify also checks if there are any warnings, and makes a preview for that specific pull request. This is beneficial for our team because netlify is incredibly quick and easy to use for getting started with our website, saving time and increasing productivity as a result. Netlify will also save more time as you can lock onto a main branch for main deployments. It can also deploy other branches and give you a URL to test those deploys, improving the amount of time it takes for you test your code before merging it to your main; Also giving you an easier option to manually test other branches. 
 
 ### GitHub Actions 
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
-![Testing automation](https://user-images.githubusercontent.com/90607602/149996101-507a8a2e-cfbc-49b9-8d19-bc40a3509987.png)
+<img src="https://user-images.githubusercontent.com/90607602/149996101-507a8a2e-cfbc-49b9-8d19-bc40a3509987.png" width="500" height="300">
 
 ### For additional examples click [here](https://docs.github.com/en/actions)
 
