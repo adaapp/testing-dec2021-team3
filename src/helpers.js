@@ -24,10 +24,9 @@ const convertToNote = (key) => {
 
 const sanitiseBeat = (oldBeat, newBeat) => {
 
-    let clean = newBeat.replace(/\D/g, '');
-
-    if (typeof oldBeat === 'string' && typeof clean === 'string'
-        && !isNaN(clean) && !isNaN(oldBeat)) {
+    if (typeof oldBeat === 'string' && typeof newBeat === 'string') {
+        
+        let clean = newBeat.replace(/\D/g, '');
         const intValue = parseInt(clean);
 
         if (clean === '') {
@@ -37,7 +36,7 @@ const sanitiseBeat = (oldBeat, newBeat) => {
         }
 
     } else {
-        throw new Error('You must enter an integer as a string!');
+        throw new Error('You must enter two strings!');
     }
 };
 
