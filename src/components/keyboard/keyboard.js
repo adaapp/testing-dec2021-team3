@@ -1,12 +1,9 @@
-import useSound from 'use-sound';
 import { useEffect } from 'react';
-import keys from "../../sounds/keys.mp3";
 import './keyboard.css';
 
 // Import helper functions:
 
 import { isKeyBlack } from '../../helpers';
-import { createSprite } from '../../helpers';
 
 const useKeyboardBindings = (play, setKey, splash, keys) => {
   useEffect(() => {
@@ -46,23 +43,15 @@ const useKeyboardBindings = (play, setKey, splash, keys) => {
 };
 
 function Keyboard(props) {
-  const ordered = ['$', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E',
-    'f', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'l', 'L', 'm', '!', '%', '(',
-    '*', '@', '^', 'n', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 's', 'S', 't', 'T', 'u',
-    'v', 'V', 'w', 'W', 'x', 'y', 'Y', 'z', 'Z'];
-
   const keyboard = ['1', '!', '2', '@', '3', '4', '$', '5', '%', '6', '^', '7', '8',
     '*', '9', '(', '0', 'q', 'Q', 'w', 'W', 'e', 'E', 'r', 't', 'T', 'y', 'Y', 'u',
     'i', 'I', 'o', 'O', 'p', 'P', 'a', 's', 'S', 'd', 'D', 'f', 'g', 'G', 'h', 'H',
     'j', 'J', 'k', 'l', 'L', 'z', 'Z', 'x', 'c', 'C', 'v', 'V', 'b', 'B', 'n', 'm'];
 
-  const map = createSprite(ordered, props.volume);
-
-  const [play] = useSound(keys, map);
-  useKeyboardBindings(play, props.setKey, props.splash, keyboard);
+  useKeyboardBindings(props.play, props.setKey, props.splash, keyboard);
 
   const clickPlay = (key) => {
-    play({ id: key });
+    props.play({ id: key });
     props.setKey(key);
   };
 

@@ -102,14 +102,18 @@ describe('Testing the sanitiseBeat function', () => {
     });
 });
 
-// describe('Testing the createSprite function', () => {
-//     it('should return a string', () => {
-//         expect(typeof convertToNote('t')).toBe('string');
-//         expect(typeof convertToNote('u')).not.toBe('number');
-//         expect(typeof convertToNote('y')).not.toBe('boolean');
-//         expect(typeof convertToNote('o')).not.toBe('undefined');
-//     });
-// });
+describe('Testing the createSprite function', () => {
+
+    it('should return an object', () => {
+        expect(createSprite([], 50)).toBeInstanceOf(Object);
+        expect(createSprite([], 22)).not.toBeInstanceOf(Number);
+        expect(createSprite([], 20)).not.toBeInstanceOf(Array);
+        expect(createSprite([], 90)).not.toBeInstanceOf(Error);
+        expect(createSprite([], 23)).not.toBeInstanceOf(Function);
+        expect(createSprite([], 91)).not.toBeInstanceOf(String);
+    });
+
+});
 
 // describe('Testing the isKeyBlack function', () => {
 //     it('should return a string', () => {

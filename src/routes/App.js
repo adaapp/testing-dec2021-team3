@@ -1,5 +1,6 @@
 // Import dependencies
 import { useState } from 'react';
+import useSound from 'use-sound';
 
 // Import components
 import Splash from '../components/splash/splash';
@@ -9,11 +10,21 @@ import Keyboard from '../components/keyboard/keyboard';
 
 // Extra files
 import './App.css';
+import keys from "../sounds/keys.mp3";
+import { createSprite } from '../helpers';
 
 function App() {
   let [splash, setSplash] = useState(true);
   let [currentKey, setKey] = useState('🎹');
-  let [volume, setVolume] = useState(50);
+  let [volume, setVolume] = useState('50');
+
+  const ordered = ['$', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E',
+    'f', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'l', 'L', 'm', '!', '%', '(',
+    '*', '@', '^', 'n', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 's', 'S', 't', 'T', 'u',
+    'v', 'V', 'w', 'W', 'x', 'y', 'Y', 'z', 'Z'];
+  
+  const map = createSprite(ordered, 50);
+  const [play, data] = useSound(keys, map);
 
   // const handleInput = (e) => {
   //   if(e.target.value < 1000) setBpm(e.target.value);
@@ -46,10 +57,10 @@ function App() {
 
         <div id='controls'>
           <Metronome volume={volume}/>
-          <Volume setVolume={setVolume} volume={volume}/>
+          <Volume data={data} setVolume={setVolume} volume={volume}/>
         </div>
         
-        <Keyboard setKey={setKey} volume={volume} splash={splash}/>
+        <Keyboard play={play} setKey={setKey} volume={volume} splash={splash}/>
 
       </div>
 

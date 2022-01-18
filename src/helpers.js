@@ -41,13 +41,22 @@ const sanitiseBeat = (oldBeat, newBeat) => {
 };
 
 const createSprite = (values, volume) => {
-    const map = { sprite: {}, volume: volume / 100 };
 
-    values.forEach((item, index) => {
-        map.sprite[item] = [(index * 7652), 7648];
-    });
+    if(Array.isArray(values)) {
+        if(volume >= 0 && volume <= 100) {
+            const map = { sprite: {}, volume: volume / 100 };
 
-    return map;
+            values.forEach((item, index) => {
+                map.sprite[item] = [(index * 7652), 7648];
+            });
+        
+            return map;
+        } else {
+            throw new Error('The volume must be between (and including) 0 and 100!');
+        }
+    } else {
+        throw new Error('You must enter a list as the first argument!');
+    }
 };
 
 const isKeyBlack = (keyboard, current) => {
