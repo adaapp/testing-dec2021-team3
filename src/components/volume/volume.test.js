@@ -31,7 +31,7 @@ describe('Testing the functionality of the slider', () => {
     
     it('should move the slider if input value is changed', () => {
         const setVolume = jest.fn();
-        render(<Volume volume={100}  setVolume={setVolume} />);
+        render(<Volume volume={100} data={() => {}} setVolume={setVolume} />);
 
         fireEvent.change(screen.getByTestId('sliderItem'), {target: { value: '20'}});
         expect(setVolume).toBeCalledWith('20');
