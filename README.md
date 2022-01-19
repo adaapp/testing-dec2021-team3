@@ -24,6 +24,8 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 - [x] Key visualisation
 - [x] Built-in configurable metronome
 
+---
+
 ## :trophy: Team members
 
 ![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
@@ -32,6 +34,7 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ![image 7 (4)](https://user-images.githubusercontent.com/90607622/150182600-754f0d43-02ad-4752-8eec-9e8611332a1c.png)
 
+---
 
 ## :heavy_exclamation_mark: Prerequisites
 
@@ -99,8 +102,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+---
 
-## 💻 Coding Practice 
+# 💻 Coding Practice 
 Throughout this project we ensured that the code is easily readable, whilst still maintaining the correct naming conventions; by using the camelCase practice throughout the entire code, and while still making sure that that all lines are correctly indented, ensuring that any other programmer could still read and understand the code. Furthermore, the code also has comments on every line of code to ensure that anyone can understand what is happening at every step of the code. 
 
 ### camelCase 
@@ -110,6 +114,7 @@ Throughout this project we ensured that the code is easily readable, whilst stil
 ### Comments 
 ![image 1](https://user-images.githubusercontent.com/90607622/150128635-f4584166-185f-47c6-976c-3233a64e1aba.png)
 
+---
 
 ## :heavy_exclamation_mark: UI Designs and UX Testing
 
@@ -127,8 +132,7 @@ Before coming down to 2 designs, multiple figma designes were used to ensure tha
 ### Click here for our [Figma document](https://www.figma.com/file/o8CUw43DlNTpAMYOXN8kNe/M%C3%A9lodie?node-id=0%3A1).
 ### Additionally, click here for our [Figma Prototype](https://www.figma.com/proto/o8CUw43DlNTpAMYOXN8kNe/M%C3%A9lodie?node-id=1%3A2&starting-point-node-id=1%3A2).
 
-
-
+---
 
 ### 📖 React Testing library 
 ![react testing library image](https://user-images.githubusercontent.com/90607602/149968583-1f49f002-711b-4ca7-9be0-a31edd29d1e8.png)
@@ -143,7 +147,7 @@ For testing the logic of the website we used react testing library's Jest. Jest 
 
 
 
-### ✴️ Coveralls
+## ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
 
     
@@ -160,12 +164,13 @@ In order to decide out of the 2 designs which is the most suitable, we agreed to
 :-------------------------:|:-------------------------:
 <img width="710" alt="Screenshot 2022-01-18 at 12 53 36" src="https://user-images.githubusercontent.com/54673305/149941036-a5cc3dff-bab8-470e-933e-b53221d6e121.png"> | <img width="714" alt="Screenshot 2022-01-18 at 12 53 16" src="https://user-images.githubusercontent.com/54673305/149941104-537de179-eea0-4f5f-b206-88d10946172e.png">
 
+---
 
-### Usability Testing of Final Product
+## Usability Testing of Final Product
 
 Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or webpage. By testing our product on real users, we were able to identify issues regarding navigation, accessibility as wells as problems that automated tools may not find as well. Those issues can then be translated into Github issues which as a team, we can later resolve. 
 
-### Accessibility Testing
+## Accessibility Testing
 
 In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. There are 4 metrics which we have focussed on which were: 
 
@@ -176,7 +181,7 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
 
-### Manual Testing 
+## Manual Testing 
 For the full document click [here](https://docs.google.com/document/d/1bMMpZrJiJaOZ3YBeL8ojtOPKUnXsnf7fyY5ar0qB9Us/edit?usp=sharing) .
 
 Manual testing was completed on the mélodie website and documented using google docs. The purpose of Manual Testing in for this is to identify any bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have necessary code implemented to fix specific bugs which may occur when the user is using our digital piano. Although Manual website Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts do not require knowledge of any testing tool.
@@ -191,7 +196,7 @@ This is an example of an issue which was discovered while manually testing the d
 
 <img src="https://user-images.githubusercontent.com/90607622/150173971-b657566c-f791-4447-ae32-5a0809fadc2c.png" width="679" height="289">
 
-
+---
 
 ## Continuous Integration / Continuous Deployment  
 
@@ -205,15 +210,15 @@ This is an example of an issue which was discovered while manually testing the d
 
 Netlify is used to continuously deploy our changes, every time we push to the main branch, the website goes live with a new version, when a pull request is made in our workflow, netflify also checks if there are any warnings, and makes a preview for that specific pull request. This is beneficial for our team because netlify is incredibly quick and easy to use for getting started with our website, saving time and increasing productivity as a result. Netlify will also save more time as you can lock onto a main branch for main deployments. It can also deploy other branches and give you a URL to test those deploys, improving the amount of time it takes for you test your code before merging it to your main; Also giving you an easier option to manually test other branches. 
 
-### GitHub Actions 
+## GitHub Actions 
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
-
-
 
 <img src="https://user-images.githubusercontent.com/90607622/150134779-46e12b68-5347-4b18-8b0d-9f3df4e2a4d1.png" width="554" height="399">
 
 ### For additional examples click [here](https://docs.github.com/en/actions)
+
+---
 
 ## Learn More
 
