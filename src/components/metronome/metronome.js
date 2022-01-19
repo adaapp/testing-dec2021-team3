@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import useSound from 'use-sound';
-import './metronome.css';
+
+// Helper function
 import { sanitiseBeat } from '../../helpers';
 
+// Import styling for this page
+import './metronome.css';
+
+// Import sound for the Metronome's beat
 import metronome from "../../sounds/metronome.mp3";
 
 function Metronome(props) {
@@ -10,13 +15,16 @@ function Metronome(props) {
   let [timeout, setTime] = useState('50');
   let [bpm, setBpm] = useState('50');
 
+  // use-sound react hook and Howler.js to play beats
   const [beat] = useSound(metronome, { volume: props.volume / 100 });
 
   const controlBeat = () => {
+    // If the metronome is not playing, then start
     if (isBeating === false) setBeat(true);
-    beat();
+    beat(); // 1 single beat plays
+    // Interval between each beat
     const bpmTime = setTimeout(controlBeat, 60000 / bpm);
-    setTime(bpmTime);
+    setTime(bpmTime); // Used to check the current interval state
   };
 
   return (
