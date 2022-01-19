@@ -35,6 +35,7 @@ Throughout this project we ensured that the code is easily readable, whilst stil
 
 
 ### Comments 
+![image 1](https://user-images.githubusercontent.com/90607622/150128635-f4584166-185f-47c6-976c-3233a64e1aba.png)
 
 
 ## :heavy_exclamation_mark: UI Designs and UX Testing
@@ -88,25 +89,35 @@ For the full document click [here](https://docs.google.com/document/d/1bMMpZrJiJ
 
 Manual testing was completed on the mélodie website and documented using google docs. The purpose of Manual Testing in for this is to identify any bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have necessary code implemented to fix specific bugs which may occur when the user is using our digital piano. Although Manual website Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts do not require knowledge of any testing tool.
 
-<img src="https://user-images.githubusercontent.com/90607671/150113465-cc4a3d7a-2f3c-448c-9dab-d4ebbc86367c.png" width="528.5" height="271.5">
+![image 2](https://user-images.githubusercontent.com/90607622/150132118-8a4aee23-28cd-4f69-81e1-6c1c70795424.png)
 
 ### Resolution to the issue 
 
-<img src="https://user-images.githubusercontent.com/90607671/150113495-1f606c6f-466b-43ee-a2f8-b3d0c91697be.png" width="528.5" height="271.5">
+![image 2 (1)](https://user-images.githubusercontent.com/90607622/150132407-4599767e-11a7-4e9c-b345-e0f1314392e9.png)
 
 
 
-## Continuous integration / Continuous Delivery  
+## Continuous Integration / Continuous Deployment  
 
-### Netflify 
-<img src="https://user-images.githubusercontent.com/90607671/150118179-7c55890f-1df7-4d87-b105-1cdcc8d71111.png" width="325.6875" height="120.625">
-<img src="https://user-images.githubusercontent.com/90607671/150118592-bddd32f4-76e5-406c-8bb2-379f51932ee5.png" width="484.2" height="262.2">
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/90607671/150118179-7c55890f-1df7-4d87-b105-1cdcc8d71111.png" width="325" height="120">
+    
+![Frame 1](https://user-images.githubusercontent.com/90607622/150133995-cdd8664d-13ac-42f0-9f5b-665770b9d345.png)
+
+</div>
+
 Netlify is used to continuously deploy our changes, every time we push to the main branch, the website goes live with a new version, when a pull request is made in our workflow, netflify also checks if there are any warnings, and makes a preview for that specific pull request. This is beneficial for our team because netlify is incredibly quick and easy to use for getting started with our website, saving time and increasing productivity as a result. Netlify will also save more time as you can lock onto a main branch for main deployments. It can also deploy other branches and give you a URL to test those deploys, improving the amount of time it takes for you test your code before merging it to your main; Also giving you an easier option to manually test other branches. 
 
 ### GitHub Actions 
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
-<img src="https://user-images.githubusercontent.com/90607602/149996101-507a8a2e-cfbc-49b9-8d19-bc40a3509987.png" width="500" height="300">
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/90607622/150134779-46e12b68-5347-4b18-8b0d-9f3df4e2a4d1.png" width="554" height="399">
+
+    </div>
 
 ### For additional examples click [here](https://docs.github.com/en/actions)
 
