@@ -186,6 +186,7 @@ The accessibility rating of 82 improves our search engine optimisation results a
 
 The best practices rating of 100 suggests that the websites design is simple and easy to navigate. 
 
+The search engine optimisation (SEO) rating of 100 is suggests the websites design attracts higher quality internet traffic and traffic will be directed to the website naturally without having to advertise it. 
 
 
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
