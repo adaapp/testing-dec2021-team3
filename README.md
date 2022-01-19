@@ -52,7 +52,7 @@ Design 1                   |  Design 2
 ### 📖 React Testing library 
 ![react testing library image](https://user-images.githubusercontent.com/90607602/149968583-1f49f002-711b-4ca7-9be0-a31edd29d1e8.png)
 
-The react testing library is used for testing the UI. Jest (standalone) is utilised to test the logic of the application. Jest is an javascript testing framework designed with simplicity in mind. Jest supports projects coded using Babel, Typescript, **Node**, React, Angular, Vue and more. Making Jest an ideal testing framework for our project. Using Jest, the team worked together to produce testing blocks that lead to 90-100% code coverage.
+The react testing library is used for testing the UI in units. This is because unit testing using Jest allows us to make our project more agile as we are already confident that the code we have will not break easily as we've found and prevented bugs earlier in the development cycle. Jest (standalone) is utilised to test the logic of the application, this is because Jest is an javascript testing framework designed with simplicity in mind. Jest supports projects coded using Babel, Typescript, Node, **React**, Angular, Vue and more; Making Jest an ideal testing framework for our project. Using Jest, the team worked together to produce testing blocks that lead to 90-100% code coverage within a short period of time and Jest also allowed the team to test react componenets without relying on their implementation details.
 
 ### ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
