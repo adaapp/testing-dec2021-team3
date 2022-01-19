@@ -13,7 +13,7 @@ function Splash(props) {
         <div id='splash' data-testid="screen" onClick={clearSplash} className={fade ? 'removed' : ''}>
             <div id='logoHolder'>
                 <img id='splashLogo' className='noselect' src='/svg/logo.svg' alt='Logo' />
-                <span id='splashText'>mélodie</span>
+                <span data-testid="appName" id='splashText'>mélodie</span>
             </div>
 
             <div id='piano'>
