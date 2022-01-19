@@ -29,7 +29,7 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
 
-### Project Management 
+## 💼 Project Management 
 
 ![image 7 (4)](https://user-images.githubusercontent.com/90607622/150182600-754f0d43-02ad-4752-8eec-9e8611332a1c.png)
 
