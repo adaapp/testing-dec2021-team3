@@ -107,7 +107,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ---
 
 # 💻 Coding Practice 
-Throughout this project we ensured that the code is easily readable, whilst still maintaining the correct naming conventions; by using the camelCase practice throughout the entire code, and while still making sure that that all lines are correctly indented, ensuring that any other programmer could still read and understand the code. Furthermore, the code also has comments on every line of code to ensure that anyone can understand what is happening at every step of the code. 
+Throughout this project we ensured that the code is easily readable, whilst still maintaining the correct naming conventions; by using the camelCase practice throughout the entire code, and while still making sure that that all lines are correctly indented, ensuring that any other programmer could still read and understand the code. Furthermore, the code also has comments on every line of code to ensure that anyone can understand what is happening at every step of the code. The team also made sure the code had the correct indentatiouts throughout the entire code. 
 
 ### camelCase 
 
