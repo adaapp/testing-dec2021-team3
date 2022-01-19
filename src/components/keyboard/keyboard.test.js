@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import Keyboard from './keyboard';
 
 describe('Test that keyboard keys are rendered correctly', () => {
@@ -111,6 +111,64 @@ describe('Test that keyboard keys are rendered correctly', () => {
 
         expect(setKey).toBeCalledWith('*');
         expect(setKey).toHaveBeenCalledTimes(3);
+    });
+
+    it('should restart animation if a black key is pressed twice', async () => {
+        const play = jest.fn();
+        const setKey = jest.fn();
+
+        render(<Keyboard play={play} setKey={setKey}/>);
+
+        fireEvent.keyDown(screen.getByTestId('keyTest*'), {
+            key: "*",
+            code: "Digit8"
+        });
+
+        fireEvent.keyDown(screen.getByTestId('keyTest*'), {
+            key: "*",
+            code: "Digit8"
+        });
+
+        expect(screen.getByTestId('keyTest*')).toHaveStyle({animation: 'none'});
+        expect(screen.getByTestId('keyTest*').className).toBe('black_key blackPressed');
+
+        await waitFor(() => expect(screen.getByTestId('keyTest*')).toHaveStyle({animation: ''}));
+    });
+
+    it('should not play if the key pressed is not in the key list', () => {
+        const play = jest.fn();
+        const setKey = jest.fn();
+
+        render(<Keyboard play={play} setKey={setKey}/>);
+
+        fireEvent.keyDown(screen.getByTestId('keyTest*'), {
+            key: "]",
+            code: "BracketRight"
+        });
+
+        expect(play).not.toBeCalled();
+    });
+
+    it('should restart animation if a white key is pressed twice', async () => {
+        const play = jest.fn();
+        const setKey = jest.fn();
+
+        render(<Keyboard play={play} setKey={setKey}/>);
+
+        fireEvent.keyDown(screen.getByTestId('keyTesth'), {
+            key: "h",
+            code: "KeyH"
+        });
+
+        fireEvent.keyDown(screen.getByTestId('keyTesth'), {
+            key: "h",
+            code: "KeyH"
+        });
+
+        expect(screen.getByTestId('keyTesth')).toHaveStyle({animation: 'none'});
+        expect(screen.getByTestId('keyTesth').className).toBe('key keyPressed');
+
+        await waitFor(() => expect(screen.getByTestId('keyTesth')).toHaveStyle({animation: ''}));
     });
 
     it('should append the blackPressed class to a black key when keyboard is pressed', async () => {
