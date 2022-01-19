@@ -28,6 +28,11 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
 
+### Project Management 
+
+![image 7 (4)](https://user-images.githubusercontent.com/90607622/150182600-754f0d43-02ad-4752-8eec-9e8611332a1c.png)
+
+
 ## :heavy_exclamation_mark: Prerequisites
 
 This project requires npm to execute the files, so ensure that it is installed.
@@ -147,13 +152,14 @@ For testing the logic of the website we used react testing library's Jest. Jest 
 Coveralls is a web service that allows us to track the code coverage of our digital piano website over time in order to optimize the effectiveness of our unit tests. Coveralls also assist the team in making sure that all of the code is well tested and it allows the team to check the code coverage over time. Coveralls does this by collecting code coverage data and analyses it for issues that the user normally wouldn't find until there some sort of an error. Coveralls will produce a summary of this data in a simplified interface where you can see the trends and changes for coverage on all of the source files used. Coveralls also gives the user a badge that has been added to the readme to provide up-to-date information about our coverage status from viewable github.
 
 
-### A/B Testing of Initial Designs 
+# A/B Testing of Initial Designs 
 
 In order to decide out of the 2 designs which is the most suitable, we agreed to implement A/B testing. This is a method of comparing an original and alternative version of a webpage or webpage element against each other to determine which one performs better and is more aligned with the project objectives or themes. Usually, this is measured through conversion rates, however, we decided to ask users from our cohort as well as work colleagues which design they liked the most and to provide any additional feedback. The additional feedback is crucial to ensure that the design and functionality are well-suited and comfortable for the end-users. We did this through a [Google Form](https://forms.gle/oGP2Z5ya8JYSQ3oj8) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) and the [results](https://docs.google.com/spreadsheets/d/10MxjZOEHTrxK1OWae4IZZT18MHrDF0U7FuKx6qBaNYE/edit?resourcekey#gid=733658812) of the form demonstrate that Design 2 has had more success which means that as a team, we will work towards achieving this design in the final product.
 
 |                          |                          |
 :-------------------------:|:-------------------------:
 <img width="710" alt="Screenshot 2022-01-18 at 12 53 36" src="https://user-images.githubusercontent.com/54673305/149941036-a5cc3dff-bab8-470e-933e-b53221d6e121.png"> | <img width="714" alt="Screenshot 2022-01-18 at 12 53 16" src="https://user-images.githubusercontent.com/54673305/149941104-537de179-eea0-4f5f-b206-88d10946172e.png">
+
 
 ### Usability Testing of Final Product
 
