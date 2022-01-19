@@ -6,7 +6,6 @@
 [![Contributors][contributors-badge]][contributors-url]
 [![Forks][forks-badge]][forks-url]
 [![Stargazers][stars-badge]][stars-url]
-[![MIT License][license-badge]][license-url]
 [![Coverage][coverage-badge]][coverage-url]
 
 
