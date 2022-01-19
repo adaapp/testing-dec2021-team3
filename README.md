@@ -28,6 +28,14 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
 
+## 💻 Coding Practice 
+Throughout this project we ensured that the code is easily readable, whilst still maintaining the correct naming conventions; by using the camelCase practice throughout the entire code, and while still making sure that that all lines are correctly indented, ensuring that any other programmer could still read and understand the code. Furthermore, the code also has comments on every line of code to ensure that anyone can understand what is happening at every step of the code. 
+
+### camelCase 
+
+
+### Comments 
+
 
 ## :heavy_exclamation_mark: UI Designs and UX Testing
 
@@ -48,7 +56,6 @@ The react testing library is used for testing the UI. Jest (standalone) is utili
 ### ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
 <img src="https://user-images.githubusercontent.com/90607602/149984221-2fc71ed1-f4ce-48b2-8da0-5afe979183c9.png" width="435.875" height="165">
-This action runs all React Testing Library tests, and pushes code coverage to coveralls.io
 
 Coveralls is a web service that allows us to track the code coverage of our digital piano website over time in order to optimize the effectiveness of our unit tests. Coveralls also assist the team in making sure that all of the code is well tested and it allows the team to check the code coverage over time. Coveralls does this by collecting code coverage data and analyses it for issues that the user normally wouldn't find until there some sort of an error. Coveralls will produce a summary of this data in a simplified interface where you can see the trends and changes for coverage on all of the source files used. Coveralls also gives the user a badge that has been added to the readme to provide up-to-date information about our coverage status from viewable github.
 
@@ -64,8 +71,6 @@ In order to decide out of the 2 designs which is the most suitable, we agreed to
 ### Usability Testing of Final Product
 
 Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or webpage. By testing our product on real users, we were able to identify issues regarding navigation, accessibility as wells as problems that automated tools may not find as well. Those issues can then be translated into Github issues which as a team, we can later resolve. 
-
-screenshot of results... pending... waiting for bruno to commit the new splash screen...
 
 ### Accessibility Testing
 
