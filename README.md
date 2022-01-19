@@ -28,6 +28,73 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ![Component 1 (12)](https://user-images.githubusercontent.com/90607671/149822239-f2c2952b-7f25-4f42-9cdd-0acbddced7d7.png)
 
+## :heavy_exclamation_mark: Prerequisites
+
+This project requires npm to execute the files, so ensure that it is installed.
+
+### Stuck? Scroll down to view instructions :arrow_heading_down:
+
+1. Ensure node and npm are installed by running the following commands in your terminal:
+
+    ```sh
+    $ node -v
+    $ npm -v
+    ```
+    If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+2. Afterwards, clone this repo:
+
+    ```sh
+    $ git clone https://github.com/adaapp/testi![Uploading unnamed.png…]()
+ng-dec2021-team3.git
+    ```
+  
+
+
+## :book: Getting Started
+
+In the project directory, you can run:
+
+  ```sh
+  $ npm start
+  ```
+
+Runs the app in the development mode. :point_up_2: \
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+  ```sh
+  $ npm test
+  ```
+  
+Launches the test runner in the interactive watch mode. :point_up_2: \
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+  ```sh
+  $ npm run build
+  ```
+Builds the app for production to the `build` folder. :point_up_2: \
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+  ```sh
+  $ npm run eject
+  ```
+**Note: this :point_up_2: is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+
 ## 💻 Coding Practice 
 Throughout this project we ensured that the code is easily readable, whilst still maintaining the correct naming conventions; by using the camelCase practice throughout the entire code, and while still making sure that that all lines are correctly indented, ensuring that any other programmer could still read and understand the code. Furthermore, the code also has comments on every line of code to ensure that anyone can understand what is happening at every step of the code. 
 
@@ -60,7 +127,15 @@ Before coming down to 2 designs, multiple figma designes were used to ensure tha
 ### 📖 React Testing library 
 ![react testing library image](https://user-images.githubusercontent.com/90607602/149968583-1f49f002-711b-4ca7-9be0-a31edd29d1e8.png)
 
-The react testing library is used for testing the UI in units. This is because unit testing using Jest allows us to make our project more agile as we are already confident that the code we have will not break easily as we've found and prevented bugs earlier in the development cycle. Jest (standalone) is utilised to test the logic of the application, this is because Jest is an javascript testing framework designed with simplicity in mind. Jest supports projects coded using Babel, Typescript, Node, **React**, Angular, Vue and more; Making Jest an ideal testing framework for our project. Using Jest, the team worked together to produce testing blocks that lead to 90-100% code coverage within a short period of time and Jest also allowed the team to test react componenets without relying on their implementation details.
+The react testing library is used for testing the UI in units. This is because react testing library is a set of helper functions that allow us to test React components without relying on their implementation details. 
+
+### Testing Logic 
+
+For testing the logic of the website we used react testing library's Jest. Jest (standalone) is utilised to test the logic of the application, this is because Jest is an javascript testing framework designed with simplicity in mind and Jest supports projects coded using Babel, Typescript, Node, **React**, Angular, Vue and more; Making Jest an ideal testing framework for our project. Using Jest, the team worked together to produce testing blocks that lead to 90-100% code coverage within a short period of time. Using Jest is beneficial for this project because unit testing using Jest allows us to make our project more agile as we are already confident that the code we have will not break easily as we've found and prevented bugs earlier in the development cycle. 
+
+![image 3](https://user-images.githubusercontent.com/90607622/150176633-ff4441ee-4846-45f8-b76a-b7a8b2949c63.png)
+
+
 
 ### ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
@@ -130,72 +205,6 @@ GitHub Actions is used to automate the testing pipeline every time code is pushe
 <img src="https://user-images.githubusercontent.com/90607622/150134779-46e12b68-5347-4b18-8b0d-9f3df4e2a4d1.png" width="554" height="399">
 
 ### For additional examples click [here](https://docs.github.com/en/actions)
-
-## :heavy_exclamation_mark: Prerequisites
-
-This project requires npm to execute the files, so ensure that it is installed.
-
-### Stuck? Scroll down to view instructions :arrow_heading_down:
-
-1. Ensure node and npm are installed by running the following commands in your terminal:
-
-    ```sh
-    $ node -v
-    $ npm -v
-    ```
-    If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-
-2. Afterwards, clone this repo:
-
-    ```sh
-    $ git clone https://github.com/adaapp/testi![Uploading unnamed.png…]()
-ng-dec2021-team3.git
-    ```
-  
-
-
-## :book: Getting Started
-
-In the project directory, you can run:
-
-  ```sh
-  $ npm start
-  ```
-
-Runs the app in the development mode. :point_up_2: \
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-  ```sh
-  $ npm test
-  ```
-  
-Launches the test runner in the interactive watch mode. :point_up_2: \
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-  ```sh
-  $ npm run build
-  ```
-Builds the app for production to the `build` folder. :point_up_2: \
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-  ```sh
-  $ npm run eject
-  ```
-**Note: this :point_up_2: is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
