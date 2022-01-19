@@ -5,7 +5,7 @@ it('should render a Material sound icon', () => {
     render(<Volume />);
 
     expect(screen.getByTestId('volumeMaterial')).toBeInTheDocument();
-    expect(screen.getByTestId('volumeMaterial').className).toBe('material');
+    expect(screen.getByTestId('volumeMaterial').className).toBe('material noselect');
     expect(screen.getByTestId('volumeMaterial').id).toBe('volumeIcon');
     expect(screen.getByTestId('volumeMaterial')).toBeInstanceOf(HTMLSpanElement);
     expect(screen.getByTestId('volumeMaterial')).toHaveTextContent('volume_up');

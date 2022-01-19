@@ -51,8 +51,8 @@ function Keyboard(props) {
   useKeyboardBindings(props.play, props.setKey, props.splash, keyboard);
 
   const clickPlay = (key) => {
-    props.play({ id: key });
     props.setKey(key);
+    props.play({ id: key });
   };
 
   return (
@@ -60,7 +60,7 @@ function Keyboard(props) {
       {keyboard.map((d, i) =>
         !isKeyBlack(keyboard, i) ?
           <div id={'section-' + d.toString()} key={'list-' + d.toString()} className='section'>
-            <div onMouseDown={() => clickPlay(d.toString())} id={'key-' + d.toString()} className='key'>
+            <div onMouseDown={() => clickPlay(d.toString())} id={'key-' + d.toString()} className='key' data-testid={'keyTest'+d.toString()}>
               <span data-testid={'white-' + d} className='noselect'>{d}</span>
             </div>
 

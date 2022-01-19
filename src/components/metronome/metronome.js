@@ -29,7 +29,7 @@ function Metronome(props) {
 
       <span data-testid="beatText" id='beats'>beats</span>
       <div data-testid="playButton" id='play' onClick={() => isBeating ? (clearTimeout(timeout), setBeat(false)) : controlBeat()}>
-        <span data-testid="playIcon" className='material'>{isBeating ? 'pause' : 'play_arrow'}</span>
+        <span data-testid="playIcon" className='noselect material'>{isBeating ? 'pause' : 'play_arrow'}</span>
       </div>
     </div>
   );

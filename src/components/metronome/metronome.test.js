@@ -5,7 +5,7 @@ it('should render the play/pause button', () => {
     render(<Metronome />);
 
     expect(screen.getByTestId('playIcon')).toBeInTheDocument();
-    expect(screen.getByTestId('playIcon').className).toBe('material');
+    expect(screen.getByTestId('playIcon').className).toBe('noselect material');
     expect(screen.getByTestId('playIcon')).toHaveTextContent('play_arrow');
     fireEvent.click(screen.getByTestId('playButton'));
     expect(screen.getByTestId('playIcon')).toHaveTextContent('pause');

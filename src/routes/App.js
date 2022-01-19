@@ -11,7 +11,7 @@ import Keyboard from '../components/keyboard/keyboard';
 // Extra files
 import './App.css';
 import keys from "../sounds/keys.mp3";
-import { createSprite } from '../helpers';
+import { createSprite, convertToNote } from '../helpers';
 
 function App() {
   let [splash, setSplash] = useState(true);
@@ -38,27 +38,25 @@ function App() {
       <div id='top'>
         <div id='container'>
           <img id='logo' className='noselect' src='/svg/logo.svg' alt='Header Logo' />
-          <span data-testid="app-text">mélodie</span>
+          <span data-testid="appText">mélodie</span>
         </div>
 
         <img id='triangle' className='effects noselect' src='/svg/triangle.svg' alt='Visual Effect 1' />
       </div>
 
       <div id='middle'>
-
         <div id='controls'>
           <Metronome volume={volume}/>
           <Volume data={data} setVolume={setVolume} volume={volume}/>
         </div>
         
         <Keyboard play={play} setKey={setKey} volume={volume} splash={splash}/>
-
       </div>
 
       <div id='bottom'>
         <div id='noteWrap'>
           <img id='note' className='effects noselect' src='/svg/notecircle.svg' alt='Note Circle' />
-          <span id='current'>{currentKey}</span>
+          <span data-testid='noteBubble' id='current'>{currentKey === '🎹' ? '🎹' : convertToNote(currentKey)}</span>
         </div>
       </div>
       <img id='tricircle' className='effects noselect' src='/svg/tricircle.svg' alt='Visual Effect 2' />
