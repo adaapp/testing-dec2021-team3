@@ -179,6 +179,15 @@ In order to improve the quality of our webpage, we used the Google Lighthouse to
 - Best Practices which is an aggregation of many practices that have been deemed 'best' such as use of HTTPS and avoiding the use of deprecated code.
 - SEO which is an aggregation of scores in features such as meta description, presence of titles, legible font sizes.
 
+
+The websites performance rating of 99 suggests it's highly optimised and as a result, the website will offer a streamlined and smoother experience giving the user a better experience as a whole when using our website, it also decreases the bounce rate of users who attempt to access the website incase it takes too long to load. Poor performance hurts the overall user experience and offers less incentive to stay. 
+
+The accessibility rating of 82 improves our search engine optimisation results and makes it easier for each user to use the website regardless of age. The website's design also includes contrasting colours with the use of black and white keys for the piano which is the most important feature that users should be able to interact with.   
+
+The best practices rating of 100 suggests that the websites design is simple and easy to navigate. 
+
+
+
 ![image 6 (1)](https://user-images.githubusercontent.com/54673305/149948691-0b5389cc-fe86-4b4b-be74-fadd1c521871.png)
 
 ## Manual Testing 
