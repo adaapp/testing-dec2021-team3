@@ -31,7 +31,12 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 ## 💼 Project Management 
 
+<div align="center">
+
 ![image 7 (4)](https://user-images.githubusercontent.com/90607622/150182600-754f0d43-02ad-4752-8eec-9e8611332a1c.png)
+</div>
+    
+The team used GitHub's Project Tracker for project management to manage issues and use the kanban methodology and maintain a workflow where we could continuously improve, visualise our workflow on a regular basis and sort tasks in order of priority. 
 
 ---
 
