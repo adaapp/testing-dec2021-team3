@@ -9,13 +9,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "react-test-renderer": "^17.0.2",
     "use-sound": "^4.0.1",
     "web-vitals": "^2.1.2"
   },
   "jest": {
     "collectCoverageFrom": [
       "!src/index.js",
-      "!src/reportWebVitals.js"
+      "!src/reportWebVitals.js",
+      "!src/__snapshots__/*"
     ]
   },
   "scripts": {
