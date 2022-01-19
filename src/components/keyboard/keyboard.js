@@ -21,14 +21,15 @@ const useKeyboardBindings = (play, setKey, splash, keys) => {
 
           if (element[0].classList.contains('keyPressed')
             || element[0].classList.contains('blackPressed')) {
-
             element[0].style.animation = 'none';
             setTimeout(function () {
               element[0].style.animation = '';
             }, 1);
           } else {
+
             element[1] ? element[0].classList.add('blackPressed')
               : element[0].classList.add('keyPressed');
+
           }
         }
       }
@@ -60,13 +61,14 @@ function Keyboard(props) {
       {keyboard.map((d, i) =>
         !isKeyBlack(keyboard, i) ?
           <div id={'section-' + d.toString()} key={'list-' + d.toString()} className='section'>
-            <div onMouseDown={() => clickPlay(d.toString())} id={'key-' + d.toString()} className='key' data-testid={'keyTest'+d.toString()}>
+            <div onMouseDown={() => clickPlay(d.toString())} id={'key-' + d.toString()} className='key' data-testid={'keyTest' + d.toString()}>
               <span data-testid={'white-' + d} className='noselect'>{d}</span>
             </div>
 
             {(() => {
               if (isKeyBlack(keyboard, i + 1)) {
-                return <div onMouseDown={() => clickPlay(keyboard[i + 1].toString())} id={'black-' + keyboard[i + 1].toString()} className='black_key'>
+                return <div onMouseDown={() => clickPlay(keyboard[i + 1].toString())} id={'black-' + keyboard[i + 1].toString()}
+                  data-testid={'keyTest' + keyboard[i+1].toString()} className='black_key'>
                   <span data-testid={'black-' + keyboard[i + 1]} className='noselect'>{keyboard[i + 1]}</span>
                 </div>
               }
