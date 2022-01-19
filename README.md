@@ -228,7 +228,7 @@ GitHub Actions is used to automate the testing pipeline every time code is pushe
 
 <img src="https://user-images.githubusercontent.com/90607622/150134779-46e12b68-5347-4b18-8b0d-9f3df4e2a4d1.png" width="554" height="399">
 
-### For additional examples click [here](https://docs.github.com/en/actions)
+### For additional examples of GitHub Actions click [here](https://docs.github.com/en/actions)
 
 ---
 
