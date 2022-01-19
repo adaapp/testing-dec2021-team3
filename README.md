@@ -39,7 +39,6 @@ The most popular online DAWs and virtual instruments are plagued with advertisem
 
 This project requires npm to execute the files, so ensure that it is installed.
 
-### Stuck? Scroll down to view instructions :arrow_heading_down:
 
 1. Ensure node and npm are installed by running the following commands in your terminal:
 
