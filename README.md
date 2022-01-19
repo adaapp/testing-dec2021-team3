@@ -45,29 +45,37 @@ The team used GitHub's Project Tracker for project management to manage issues a
 This project requires npm to execute the files, so ensure that it is installed.
 
 
-1. Ensure node and npm are installed by running the following commands in your terminal:
+### 1. Ensure node and npm are installed by running the following commands in your terminal:
 
-    ```sh
-    $ node -v
-    $ npm -v
-    ```
-    If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+```sh
+node -v
+```
+```sh
+npm -v
+```
+If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-2. Afterwards, clone this repo:
+### 2. To run end-to-end tests, please install 'serve' globally in your machine:
 
-    ```sh
-    $ git clone https://github.com/adaapp/testing-dec2021-team3.git![Uploading unnamed.png…]()
-    ```
+```sh
+npm i -g serve
+```
+
+### 3. Afterwards, clone this repo:
+
+```sh
+git clone https://github.com/adaapp/testing-dec2021-team3.git
+```
+
+Now, you should have everything that you need to proceed! Navigate into the folder you just cloned to find our code :)
   
-
-
 ## :book: Getting Started
 
-In the project directory, you can run:
+### 1. In the project directory, you can run:
 
-  ```sh
-  $ npm start
-  ```
+```sh
+npm start
+```
 
 Runs the app in the development mode. :point_up_2: \
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -75,27 +83,44 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-  ```sh
-  $ npm test
-  ```
-  
-Launches the test runner in the interactive watch mode. :point_up_2: \
+### 2. To run logic and UI tests for our app, run the following command:
+
+```sh
+npm test
+```
+ 
+This launches the test runner in the interactive watch mode. :point_up_2: \
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  ```sh
-  $ npm run build
-  ```
+### 3. To view full tests and code coverage for our code:
+
+```sh
+npm test -- --coverage --watchAll=false
+```
+
+### 4. To run our E2E tests:
+#### Note that the following command might be different depending on your Operating System:
+
+```sh
+npm run build
+```
 Builds the app for production to the `build` folder. :point_up_2: \
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-  ```sh
-  $ npm run eject
-  ```
+```sh
+PORT=4571 serve -s build & npm run test:e2e
+```
+
+We are big on testing, so we're using Puppeteer to automate our end to end testing! Puppeteer requires a running production server to test our awesome app. If the commands above do not work for you, please feel free to raise an issue :)
+
+### 5. To customise your React configs in-depth and detach from react-scripts:
+
+```sh
+$ npm run eject
+```
+
 **Note: this :point_up_2: is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
@@ -136,16 +161,6 @@ Before coming down to 2 designs, multiple figma designes were used to ensure tha
 
 ---
 
-### Puppeteer 
-
-![29446482-04f7036a-841f-11e7-9872-91d1fc2ea683](https://user-images.githubusercontent.com/90607602/150223264-076f02c5-0ad3-4757-9138-9031ef5b66d9.png)
-
-
-![pup_1](https://user-images.githubusercontent.com/90607602/150223289-0bf955ae-077f-461e-8e5f-3975b22a9fad.png)
-
-Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol, the team used Puppeteer to automate ui testing.  
-
-
 ### 📷 Regression Testing 
 
 The team used regression testing to maintain code base consistency. Regression testing creates a snapshot of the DOM (HTML) for each of the components, if any of those components change it will throw an error if not the test will pass. 
@@ -163,8 +178,6 @@ For testing the logic of the website we used react testing library's Jest. Jest 
 
 ![image 3](https://user-images.githubusercontent.com/90607622/150176633-ff4441ee-4846-45f8-b76a-b7a8b2949c63.png)
 
-
-
 ## ✴️ Coveralls
 ![Coveralls logo](https://user-images.githubusercontent.com/90607602/149969963-61ec1cbe-d202-4dfc-983f-c8152c6ded97.png)
 
@@ -177,7 +190,16 @@ Coveralls also gives the user a badge that has been added to the readme to provi
 
 [![Coverage][coverage-badge]][coverage-url]
 
+### End-to-End Testing! 
 
+<div align="center">
+
+![29446482-04f7036a-841f-11e7-9872-91d1fc2ea683](https://user-images.githubusercontent.com/90607602/150223264-076f02c5-0ad3-4757-9138-9031ef5b66d9.png)
+![pup_1](https://user-images.githubusercontent.com/90607602/150223289-0bf955ae-077f-461e-8e5f-3975b22a9fad.png)  
+
+</div>
+
+Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol, the team used Puppeteer to automate End-to-End testing. We have also integrated React E2E Testing with Puppeteer into a GitHub action, allowing us to test our code with Puppeteer whenever we push or make a pull request :)
 
 # A/B Testing of Initial Designs 
 
