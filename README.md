@@ -46,7 +46,15 @@ Design 1                   |  Design 2
 :-------------------------:|:-------------------------:
 ![design 1](https://user-images.githubusercontent.com/54673305/149911704-59a77e06-e0d5-4a91-944e-ee0a2559b3c6.png) |  ![design 2](https://user-images.githubusercontent.com/54673305/149911790-efbf0554-84c9-4c1d-872a-b5fe4b1a7f80.png)
 
+Before coming down to 2 designs, multiple figma designes were used to ensure that we came to the best conclusion when choosing the final design. 
+
+![image 5](https://user-images.githubusercontent.com/90607622/150172653-1e0a45c5-2b21-44ca-be73-2aa988f162ef.png)
+
+
+### Click here for our [Figma document](https://www.figma.com/file/o8CUw43DlNTpAMYOXN8kNe/M%C3%A9lodie?node-id=0%3A1).
 ### Additionally, click here for our [Figma Prototype](https://www.figma.com/proto/o8CUw43DlNTpAMYOXN8kNe/M%C3%A9lodie?node-id=1%3A2&starting-point-node-id=1%3A2).
+
+
 
 
 ### 📖 React Testing library 
@@ -95,6 +103,7 @@ Manual testing was completed on the mélodie website and documented using google
 
 ![image 2 (1)](https://user-images.githubusercontent.com/90607622/150132407-4599767e-11a7-4e9c-b345-e0f1314392e9.png)
 
+This issue was fixed by making the 
 
 
 ## Continuous Integration / Continuous Deployment  
