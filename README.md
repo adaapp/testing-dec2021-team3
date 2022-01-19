@@ -136,6 +136,12 @@ Before coming down to 2 designs, multiple figma designes were used to ensure tha
 
 ---
 
+### 📷 Regression Testing 
+
+The team used regression testing to maintain code base consistency. Regression testing creates a snapshot of the DOM (HTML) for each of the components, if any of those components change it will throw an error if not the test will pass. 
+
+![regression_1](https://user-images.githubusercontent.com/90607602/150221117-d011030c-624f-402f-9209-32a2b37b77ec.png)
+
 ### 📖 React Testing library 
 ![react testing library image](https://user-images.githubusercontent.com/90607602/149968583-1f49f002-711b-4ca7-9be0-a31edd29d1e8.png)
 
