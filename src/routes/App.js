@@ -1,5 +1,6 @@
 // Import dependencies
 import { useState } from 'react';
+import useSound from 'use-sound';
 
 // Import components
 import Splash from '../components/splash/splash';
@@ -9,20 +10,21 @@ import Keyboard from '../components/keyboard/keyboard';
 
 // Extra files
 import './App.css';
+import keys from "../sounds/keys.mp3";
+import { createSprite, convertToNote } from '../helpers';
 
 function App() {
   let [splash, setSplash] = useState(true);
   let [currentKey, setKey] = useState('🎹');
-  let [volume, setVolume] = useState(50);
+  let [volume, setVolume] = useState('50');
 
-  // const handleInput = (e) => {
-  //   if(e.target.value < 1000) setBpm(e.target.value);
-
-  //   if(isBeating) {
-  //     clearTimeout(timeout);
-  //     setBeat(false)
-  //   }
-  // }
+  const ordered = ['$', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E',
+    'f', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'l', 'L', 'm', '!', '%', '(',
+    '*', '@', '^', 'n', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 's', 'S', 't', 'T', 'u',
+    'v', 'V', 'w', 'W', 'x', 'y', 'Y', 'z', 'Z'];
+  
+  const map = createSprite(ordered, 50);
+  const [play, data] = useSound(keys, map);
 
   return (
     <div className='App'>
@@ -36,27 +38,25 @@ function App() {
       <div id='top'>
         <div id='container'>
           <img id='logo' className='noselect' src='/svg/logo.svg' alt='Header Logo' />
-          <span data-testid="app-text">mélodie</span>
+          <span data-testid="appText">mélodie</span>
         </div>
 
         <img id='triangle' className='effects noselect' src='/svg/triangle.svg' alt='Visual Effect 1' />
       </div>
 
       <div id='middle'>
-
         <div id='controls'>
           <Metronome volume={volume}/>
-          <Volume setVolume={setVolume} volume={volume}/>
+          <Volume data={data} setVolume={setVolume} volume={volume}/>
         </div>
         
-        <Keyboard setKey={setKey} volume={volume} splash={splash}/>
-
+        <Keyboard play={play} setKey={setKey} volume={volume} splash={splash}/>
       </div>
 
       <div id='bottom'>
         <div id='noteWrap'>
           <img id='note' className='effects noselect' src='/svg/notecircle.svg' alt='Note Circle' />
-          <span id='current'>{currentKey}</span>
+          <span data-testid='noteBubble' id='current'>{currentKey === '🎹' ? '🎹' : convertToNote(currentKey)}</span>
         </div>
       </div>
       <img id='tricircle' className='effects noselect' src='/svg/tricircle.svg' alt='Visual Effect 2' />

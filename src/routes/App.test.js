@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, getByText, getByTestId, waitFor } from '@testing-library/react';
 import App from './App';
 
 it('should display the flash screen when rendered', async () => {
@@ -20,8 +20,8 @@ it('should display the flash screen when rendered', async () => {
 it('should display the name of the app ', () => {
   render(<App />);
   
-  expect(screen.getByTestId('app-text')).toHaveTextContent('mélodie');
-  expect(screen.getByTestId('app-text')).toBeInstanceOf(HTMLSpanElement);
+  expect(screen.getByTestId('appText')).toHaveTextContent('mélodie');
+  expect(screen.getByTestId('appText')).toBeInstanceOf(HTMLSpanElement);
 });
 
 it('should display the app logo at the top of the page', () => {
@@ -46,6 +46,30 @@ it('should display every animated shape', () => {
 
   expect(screen.getByAltText('Visual Effect 3')).toBeVisible();
   expect(screen.getByAltText('Visual Effect 3')).toBeInstanceOf(Image);
+});
+
+describe('Test the note bubble', () => {
+  it('should display the equivalent note when a key is pressed', () => {
+    render(<App />);
+
+    expect(screen.getByTestId('noteBubble')).toHaveTextContent('🎹');
+
+
+    expect(screen.getByTestId('keyTesta')).toBeInTheDocument();
+
+    // fireEvent.click(screen.getByTestId('keyTesta'));
+
+    // fireEvent(
+    //   screen.getByTestId('keyTesta'),
+    //   new MouseEvent('click', {
+    //     bubbles: true
+    //   }),
+    // );
+
+    // waitFor(() => expect(screen.getByTestId('noteBubble')).toBe('Bdf334'));
+
+    //expect(screen.getByTestId('noteBubble')).toHaveTextContent('B4');
+  });
 });
 
 

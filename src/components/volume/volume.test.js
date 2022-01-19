@@ -5,7 +5,7 @@ it('should render a Material sound icon', () => {
     render(<Volume />);
 
     expect(screen.getByTestId('volumeMaterial')).toBeInTheDocument();
-    expect(screen.getByTestId('volumeMaterial').className).toBe('material');
+    expect(screen.getByTestId('volumeMaterial').className).toBe('material noselect');
     expect(screen.getByTestId('volumeMaterial').id).toBe('volumeIcon');
     expect(screen.getByTestId('volumeMaterial')).toBeInstanceOf(HTMLSpanElement);
     expect(screen.getByTestId('volumeMaterial')).toHaveTextContent('volume_up');
@@ -31,7 +31,7 @@ describe('Testing the functionality of the slider', () => {
     
     it('should move the slider if input value is changed', () => {
         const setVolume = jest.fn();
-        render(<Volume volume={100}  setVolume={setVolume} />);
+        render(<Volume volume={100} data={() => {}} setVolume={setVolume} />);
 
         fireEvent.change(screen.getByTestId('sliderItem'), {target: { value: '20'}});
         expect(setVolume).toBeCalledWith('20');
