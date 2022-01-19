@@ -136,6 +136,16 @@ Before coming down to 2 designs, multiple figma designes were used to ensure tha
 
 ---
 
+### Puppeteer 
+
+![29446482-04f7036a-841f-11e7-9872-91d1fc2ea683](https://user-images.githubusercontent.com/90607602/150223264-076f02c5-0ad3-4757-9138-9031ef5b66d9.png)
+
+
+![pup_1](https://user-images.githubusercontent.com/90607602/150223289-0bf955ae-077f-461e-8e5f-3975b22a9fad.png)
+
+Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol, the team used Puppeteer to automate ui testing.  
+
+
 ### 📷 Regression Testing 
 
 The team used regression testing to maintain code base consistency. Regression testing creates a snapshot of the DOM (HTML) for each of the components, if any of those components change it will throw an error if not the test will pass. 
