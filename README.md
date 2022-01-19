@@ -37,6 +37,9 @@ Design 1                   |  Design 2
 :-------------------------:|:-------------------------:
 ![design 1](https://user-images.githubusercontent.com/54673305/149911704-59a77e06-e0d5-4a91-944e-ee0a2559b3c6.png) |  ![design 2](https://user-images.githubusercontent.com/54673305/149911790-efbf0554-84c9-4c1d-872a-b5fe4b1a7f80.png)
 
+### Additionally, click here for our [Figma Prototype](https://www.figma.com/proto/o8CUw43DlNTpAMYOXN8kNe/M%C3%A9lodie?node-id=1%3A2&starting-point-node-id=1%3A2).
+
+
 ### 📖 React Testing library 
 ![react testing library image](https://user-images.githubusercontent.com/90607602/149968583-1f49f002-711b-4ca7-9be0-a31edd29d1e8.png)
 
@@ -80,19 +83,19 @@ For the full document click [here](https://docs.google.com/document/d/1bMMpZrJiJ
 
 Manual testing was completed on the mélodie website and documented using google docs. The purpose of Manual Testing in for this is to identify any bugs, issues, or defects in the website. Manual software testing helps to find critical bugs in the website design such as features not working as intended or not working at all. This allows us to Debug the website and improve features which did not have necessary code implemented to fix specific bugs which may occur when the user is using our digital piano. Although Manual website Testing requires more effort our team realised it was imperative to check automation feasibility; Additionally, Manual Testing concepts do not require knowledge of any testing tool.
 
-<img src="https://user-images.githubusercontent.com/90607602/149998909-e9b14204-e748-4eeb-a7b9-2818eca8ee4e.png" width="500" height="250">
+<img src="https://user-images.githubusercontent.com/90607671/150113465-cc4a3d7a-2f3c-448c-9dab-d4ebbc86367c.png" width="528.5" height="271.5">
 
 ### Resolution to the issue 
 
-<img src="https://user-images.githubusercontent.com/90607602/149999012-7c40624f-1a2b-40b3-a910-2d3c97680e3e.png" width="500" height="250">
+<img src="https://user-images.githubusercontent.com/90607671/150113495-1f606c6f-466b-43ee-a2f8-b3d0c91697be.png" width="528.5" height="271.5">
 
 
 
 ## Continuous integration / Continuous Delivery  
 
 ### Netflify 
-<img src="https://user-images.githubusercontent.com/90607602/149997385-e8bb60d8-a8f3-4c4b-9d4a-89886c284077.png" width="400" height="250">
-<img src="https://user-images.githubusercontent.com/90607602/149996985-ecabe7b2-da3a-4637-8a06-cc4edc90915e.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/90607671/150118179-7c55890f-1df7-4d87-b105-1cdcc8d71111.png" width="325.6875" height="120.625">
+<img src="https://user-images.githubusercontent.com/90607671/150118592-bddd32f4-76e5-406c-8bb2-379f51932ee5.png" width="484.2" height="262.2">
 Netlify is used to continuously deploy our changes, every time we push to the main branch, the website goes live with a new version, when a pull request is made in our workflow, netflify also checks if there are any warnings, and makes a preview for that specific pull request. This is beneficial for our team because netlify is incredibly quick and easy to use for getting started with our website, saving time and increasing productivity as a result. Netlify will also save more time as you can lock onto a main branch for main deployments. It can also deploy other branches and give you a URL to test those deploys, improving the amount of time it takes for you test your code before merging it to your main; Also giving you an easier option to manually test other branches. 
 
 ### GitHub Actions 
