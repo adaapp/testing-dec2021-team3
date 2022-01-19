@@ -100,6 +100,7 @@ Throughout this project we ensured that the code is easily readable, whilst stil
 
 ### camelCase 
 
+![camelCase (1)](https://user-images.githubusercontent.com/90607622/150179878-db4a4c67-cd33-4a65-8ab5-166c714c1be1.png)
 
 ### Comments 
 ![image 1](https://user-images.githubusercontent.com/90607622/150128635-f4584166-185f-47c6-976c-3233a64e1aba.png)
