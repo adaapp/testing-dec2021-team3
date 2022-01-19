@@ -101,7 +101,7 @@ Manual testing was completed on the mélodie website and documented using google
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/90607671/150118179-7c55890f-1df7-4d87-b105-1cdcc8d71111.png" width="325" height="120">
+<img src="https://user-images.githubusercontent.com/90607671/150118179-7c55890f-1df7-4d87-b105-1cdcc8d71111.png" width="300" height="95">
     
 ![Frame 1](https://user-images.githubusercontent.com/90607622/150133995-cdd8664d-13ac-42f0-9f5b-665770b9d345.png)
 
@@ -113,21 +113,17 @@ Netlify is used to continuously deploy our changes, every time we push to the ma
 
 GitHub Actions is used to automate the testing pipeline every time code is pushed or a request is made. This allows the team to create workflows that build and test every pull request to the repository, or deploy our merged pull requests to production. The team is also using GitHub Actions to improve the workflow of the team by automatically adding the appropriate labels. 
 
-<div align="center">
+
 
 <img src="https://user-images.githubusercontent.com/90607622/150134779-46e12b68-5347-4b18-8b0d-9f3df4e2a4d1.png" width="554" height="399">
 
-    </div>
-
 ### For additional examples click [here](https://docs.github.com/en/actions)
-
-
 
 ## :heavy_exclamation_mark: Prerequisites
 
 This project requires npm to execute the files, so ensure that it is installed.
 
-<details><summary><b>Stuck? Press here to view instructions :arrow_heading_down:</b></summary>
+### Stuck? Scroll down to view instructions :arrow_heading_down:
 
 1. Ensure node and npm are installed by running the following commands in your terminal:
 
@@ -144,7 +140,7 @@ This project requires npm to execute the files, so ensure that it is installed.
 ng-dec2021-team3.git
     ```
   
-</details>
+
 
 ## :book: Getting Started
 
