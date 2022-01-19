@@ -103,7 +103,10 @@ Manual testing was completed on the mélodie website and documented using google
 
 ![image 2 (1)](https://user-images.githubusercontent.com/90607622/150132407-4599767e-11a7-4e9c-b345-e0f1314392e9.png)
 
-This issue was fixed by making the 
+This is an example of an issue which was discovered while manually testing the design. This was caused by first, not playing any keys and second adjusting the volume slider. This was fixed using the exposed howl data object and setting the volume to Howl directly, allowing the test to pass. 
+
+<img src="https://user-images.githubusercontent.com/90607622/150173971-b657566c-f791-4447-ae32-5a0809fadc2c.png" width="679" height="289">
+
 
 
 ## Continuous Integration / Continuous Deployment  
