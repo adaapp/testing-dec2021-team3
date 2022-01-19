@@ -8,8 +8,6 @@ describe('Test that elements are rendered correctly on the page', () => {
         expect(screen.getByTestId('playIcon')).toBeInTheDocument();
         expect(screen.getByTestId('playIcon').className).toBe('noselect material');
         expect(screen.getByTestId('playIcon')).toHaveTextContent('play_arrow');
-        fireEvent.click(screen.getByTestId('playButton'));
-        expect(screen.getByTestId('playIcon')).toHaveTextContent('pause');
     });
 
     it('should display the metronome image', () => {
@@ -46,6 +44,15 @@ describe('Test the bpm input', () => {
 
         expect(screen.getByTestId('bpmText')).toBeInTheDocument();
         expect(screen.getByTestId('bpmText').value).toBe('50');
+    });
+
+    it('should stop the Metronome if value is changed', () => {
+        render(<Metronome />);
+
+        fireEvent.click(screen.getByTestId('playButton'));
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('pause');
+        fireEvent.change(screen.getByTestId('bpmText'), {target: { value: '400'}});
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('play_arrow');
     });
 
     it('should change bpm when the user inputs a value above 0 and under (or equal) to 1000', () => {
@@ -129,6 +136,16 @@ describe('Test the bpm input', () => {
         fireEvent.change(screen.getByTestId('bpmText'), {target: { value: '1'}});
     });
 
+    it('should not change to a 1 when focus changes away from input if the value is not empty', () => {
+        render(<Metronome />);
+
+        fireEvent.focusIn(screen.getByTestId('bpmText'));
+        fireEvent.change(screen.getByTestId('bpmText'), {target: { value: '10'}});
+        fireEvent.focusOut(screen.getByTestId('bpmText'));
+        fireEvent.change(screen.getByTestId('bpmText'), {target: { value: '10'}});
+    });
+
+
     it('should increase its width if the amount of numbers in the input increases', () => {
         render(<Metronome/>);
 
@@ -139,5 +156,27 @@ describe('Test the bpm input', () => {
 
         fireEvent.change(screen.getByTestId('bpmText'), {target: { value: '5'}});
         expect(screen.getByTestId('bpmText')).toHaveStyle({width: '13.5px'});
+    });
+});
+
+describe('Test the play/pause button', () => {
+    it('should change the material icon from a play icon to pause', () => {
+        render(<Metronome />);
+
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('play_arrow');
+        fireEvent.click(screen.getByTestId('playButton'));
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('pause');
+    });
+
+    it('should stop the Metronome sound if play button is clicked twice', () => {
+        render(<Metronome />);
+
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('play_arrow');
+        
+        fireEvent.click(screen.getByTestId('playButton'));
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('pause');
+        
+        fireEvent.click(screen.getByTestId('playButton'));
+        expect(screen.getByTestId('playIcon')).toHaveTextContent('play_arrow');
     });
 });

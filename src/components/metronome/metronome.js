@@ -19,20 +19,27 @@ function Metronome(props) {
   const [beat] = useSound(metronome, { volume: props.volume / 100 });
 
   const controlBeat = () => {
-    // If the metronome is not playing, then start
-    if (isBeating === false) setBeat(true);
+    setBeat(true);
     beat(); // 1 single beat plays
     // Interval between each beat
     const bpmTime = setTimeout(controlBeat, 60000 / bpm);
     setTime(bpmTime); // Used to check the current interval state
   };
 
+  const handleSet = (e) => {
+    if(isBeating) {
+      clearTimeout(timeout)
+      setBeat(false);
+    }
+
+    setBpm(sanitiseBeat(bpm, e.target.value))
+  }
+
   return (
     <div id='metronome'>
       <img id='metroIcon' className='noselect' src='/svg/metronome.svg' alt='Metronome Icon' />
       <input type="text" id='bpmInput' data-testid="bpmText" onBlur={() => { if(bpm === '') setBpm('1') }} 
-        onChange={(e) => setBpm(sanitiseBeat(bpm, e.target.value))}
-        style={{ width: ((bpm.length) * 13.5).toString() + 'px' }}
+        onChange={handleSet} style={{ width: ((bpm.length) * 13.5).toString() + 'px' }}
         value={bpm}></input>
 
       <span data-testid="beatText" id='beats'>beats</span>
