@@ -52,8 +52,7 @@ This project requires npm to execute the files, so ensure that it is installed.
 2. Afterwards, clone this repo:
 
     ```sh
-    $ git clone https://github.com/adaapp/testi![Uploading unnamed.png…]()
-ng-dec2021-team3.git
+    $ git clone https://github.com/adaapp/testing-dec2021-team3.git![Uploading unnamed.png…]()
     ```
   
 
