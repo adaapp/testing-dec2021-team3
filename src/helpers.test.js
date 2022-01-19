@@ -13,6 +13,14 @@ describe('Testing the convertToNote() function', () => {
         expect(typeof convertToNote('o')).not.toBe('undefined');
     });
 
+    it('should return null if the key entered does not exist in the midi object', () => {
+        expect(convertToNote('-')).toBeNull();
+        expect(convertToNote('#')).toBeNull();
+        expect(convertToNote('`')).toBeNull();
+        expect(convertToNote('{')).toBeNull();
+        expect(convertToNote('')).toBeNull();
+    });
+
     it('should convert a valid white keyboard key given as a string to a note', () => {
         expect(convertToNote('q')).toBe('F3');
         expect(convertToNote('w')).toBe('G3');
