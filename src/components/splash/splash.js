@@ -22,8 +22,8 @@ function Splash(props) {
                         <span data-testid="helper" id='playHelp'>Play the virtual keys using your keyboard, or by clicking on them!</span>
 
                         <div id='splashBottom'>
-                            <div data-testid="material-click" className='material'>touch_app</div>
-                            <span data-testid="click">click to continue...</span>
+                            <div data-testid="material-click" className='material' id='touchIcon'>touch_app</div>
+                            <span id='continueClick' data-testid="click">click to continue...</span>
                         </div>
                     </div>
 
