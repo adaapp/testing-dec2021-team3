@@ -186,7 +186,7 @@ For testing the logic of the website we used react testing library's Jest. Jest 
 
 Coveralls is a web service that allows us to track the code coverage of our digital piano website over time in order to optimize the effectiveness of our unit tests. Coveralls also assist the team in making sure that all of the code is well tested and it allows the team to check the code coverage over time. Coveralls does this by collecting code coverage data and analyses it for issues that the user normally wouldn't find until there some sort of an error. Coveralls will produce a summary of this data in a simplified interface where you can see the trends and changes for coverage on all of the source files used. 
 
-Coveralls also gives the user a badge that has been added to the readme to provide up-to-date information about our coverage status from viewable github.
+Coveralls also gives the user a badge that has been added to the readme to provide up-to-date information about our coverage status from viewable github. We don't want to flex, but look at that beautiful green badge:
 
 [![Coverage][coverage-badge]][coverage-url]
 
@@ -203,7 +203,7 @@ Puppeteer is a Node library which provides a high-level API to control Chrome or
 
 # A/B Testing of Initial Designs 
 
-In order to decide out of the 2 designs which is the most suitable, we agreed to implement A/B testing. This is a method of comparing an original and alternative version of a webpage or webpage element against each other to determine which one performs better and is more aligned with the project objectives or themes. Usually, this is measured through conversion rates, however, we decided to ask users from our cohort as well as work colleagues which design they liked the most and to provide any additional feedback. The additional feedback is crucial to ensure that the design and functionality are well-suited and comfortable for the end-users. We did this through a [Google Form](https://forms.gle/oGP2Z5ya8JYSQ3oj8) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) and the [results](https://docs.google.com/spreadsheets/d/10MxjZOEHTrxK1OWae4IZZT18MHrDF0U7FuKx6qBaNYE/edit?resourcekey#gid=733658812) of the form demonstrate that Design 2 has had more success which means that as a team, we will work towards achieving this design in the final product.
+In order to decide out of the 2 designs which is the most suitable, we agreed to implement A/B testing. This is a method of comparing an original and alternative version of a webpage or webpage element against each other to determine which one performs better and is more aligned with the project objectives or themes. Usually, this is measured through conversion rates, however, we decided to ask users from our cohort as well as work colleagues which design they liked the most and to provide any additional feedback. The additional feedback is crucial to ensure that the design and functionality are well-suited and comfortable for the end-users. We did this through a [Google Form](https://forms.gle/oGP2Z5ya8JYSQ3oj8) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) and the [results](https://drive.google.com/file/d/1G62NAmV3yAeIEzm9_jnd-KDQcIVTPdkE/view?usp=sharing) of the form demonstrate that Design 2 has had more success which means that as a team, we will work towards achieving this design in the final product.
 
 |                          |                          |
 :-------------------------:|:-------------------------:
@@ -213,9 +213,14 @@ In order to decide out of the 2 designs which is the most suitable, we agreed to
 
 ## Usability Testing of Final Product
 
-Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or webpage. By testing our product on real users, we were able to identify issues regarding navigation, accessibility as wells as problems that automated tools may not find as well. Those issues can then be translated into Github issues which as a team, we can later resolve. 
+Whilst gathering any feedback from the previous form and discussions and incorporating it into the final product, we decided to construct a [Google Form](https://forms.gle/RzfgZcjYtmJ8q9Aq6) ![](https://user-images.githubusercontent.com/54673305/149938128-5a80d437-f65a-4e59-b875-6128e7b320d8.png) that would test the usability of the final product's design. Usability testing is a technique to evaluate a device or product, such as a web form or webpage. By testing our product on real users, we were able to identify issues regarding navigation, accessibility as wells as problems that automated tools may not find as well. Those issues can then be translated into Github issues which as a team, we can later resolve. Here are the [results:](https://drive.google.com/file/d/1sZRlZl4p7txXb9bFdc18Jk4_tzkuiYeQ/view?usp=sharing)
 
-## Accessibility Testing
+|                          |                          |
+:-------------------------:|:-------------------------:
+<img width="710" alt="Screenshot 2022-01-18 at 12 53 36" src="https://user-images.githubusercontent.com/54673205/150262969-b303d9b3-10db-4a6e-94fe-505641ae5f3a.png"> | <img width="714" alt="Screenshot 2022-01-18 at 12 53 16" src="https://user-images.githubusercontent.com/54673205/150263066-bfd40fb2-aa9e-4894-8a96-f62d67ae1a9a.png">
+<img width="710" alt="Screenshot 2022-01-18 at 12 53 36" src="https://user-images.githubusercontent.com/54673205/150263330-9e7b0ec7-371e-465c-91b1-7d18bfd29c73.png"> | <img width="714" alt="Screenshot 2022-01-18 at 12 53 16" src="https://user-images.githubusercontent.com/54673205/150263259-e1abd593-4100-4867-a33a-baddd19ac5b9.png">
+
+## Performance and Accessibility Testing
 
 In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. In order to improve the quality of our webpage, we used the Google Lighthouse tool to generate a report containing a summary of the quality of our application. Lighthouse is a free and open-source tool that can be accessed through the development console for Chromium-based browsers. There are 4 metrics which we have focussed on which were: 
 
