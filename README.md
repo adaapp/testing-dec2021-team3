@@ -58,8 +58,9 @@ If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com
 ### 2. To run end-to-end tests, please install 'serve' globally in your machine:
 
 ```sh
-npm i -g serve
+npm install -g serve
 ```
+If you are getting some errors after using that command and you are on Linux/MacOS, try running it as a superuser (sudo)
 
 ### 3. Afterwards, clone this repo:
 
@@ -70,6 +71,13 @@ git clone https://github.com/adaapp/testing-dec2021-team3.git
 Now, you should have everything that you need to proceed! Navigate into the folder you just cloned to find our code :)
   
 ## :book: Getting Started
+
+### 0. Before trying out any of the next commands:
+
+```sh
+npm install
+```
+If you get some vulnerability warnings after executing this command, don't worry ;), it's the React team that has to do some catch-up...
 
 ### 1. In the project directory, you can run:
 
@@ -88,8 +96,12 @@ You may also see any lint errors in the console.
 ```sh
 npm test
 ```
+```sh
+a
+```
  
 This launches the test runner in the interactive watch mode. :point_up_2: \
+Clicking on the 'a' key runs all tests (excluding End-to-End tests).
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### 3. To view full tests and code coverage for our code:
@@ -112,8 +124,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ```sh
 PORT=4571 serve -s build & npm run test:e2e
 ```
+'PORT=4571' is used to set the port where the production server will be listening for incoming connections. We decided to use a very specific number so that it doesn't interfere with any of your servers <3 (especially if you are testing multiple apps for some scholar reason?) 
 
-We are big on testing, so we're using Puppeteer to automate our end to end testing! Puppeteer requires a running production server to test our awesome app. If the commands above do not work for you, please feel free to raise an issue :)
+We are big on testing, so we're using Puppeteer to automate our end to end testing! Puppeteer requires a running production server to test our awesome app. If the commands above do not work for you, please feel free to raise an issue :).
 
 ### 5. To customise your React configs in-depth and detach from react-scripts:
 
