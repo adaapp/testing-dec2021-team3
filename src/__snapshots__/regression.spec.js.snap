@@ -50,11 +50,13 @@ exports[`checks that the App DOM is consistent 1`] = `
               <div
                 className="material"
                 data-testid="material-click"
+                id="touchIcon"
               >
                 touch_app
               </div>
               <span
                 data-testid="click"
+                id="continueClick"
               >
                 click to continue...
               </span>
@@ -84,6 +86,7 @@ exports[`checks that the App DOM is consistent 1`] = `
       />
       <span
         data-testid="appText"
+        id="homeLogo"
       >
         mélodie
       </span>
@@ -2245,11 +2248,13 @@ exports[`checks that the Splash DOM is consistent 1`] = `
           <div
             className="material"
             data-testid="material-click"
+            id="touchIcon"
           >
             touch_app
           </div>
           <span
             data-testid="click"
+            id="continueClick"
           >
             click to continue...
           </span>

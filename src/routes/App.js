@@ -65,7 +65,7 @@ function App() {
       <div id='top'>
         <div id='container'>
           <img id='logo' className='noselect' src='/svg/logo.svg' alt='Header Logo' />
-          <span data-testid="appText">mélodie</span>
+          <span data-testid="appText" id='homeLogo'>mélodie</span>
         </div>
 
         <img id='triangle' className='effects noselect' src='/svg/triangle.svg' alt='Visual Effect 1' />
